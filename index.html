@@ -18,19 +18,17 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
 	
-	<script src="app.js"></script>
-
 </head>
 <body>
 	<!-- navbar -->
-	<nav class="navbar">
+	<div class="navbar" id="navbar">
 		<input id="nav-toggle" type="checkbox">
 		<div class="logo"><a href="#">FMB</a></div>
 		<ul class="nav-menu">
 			<li><a href="#home" class="active">Home</a></li>
 			<li><a href="#about">About</a></li>
 			<li><a href="#education">Education</a></li>
-			<li><a href="#work">Work</a></li>
+			<li><a href="#skill">Skills</a></li>
 			<li><a href="#portfolio">Portfolio</a></li>
 			<li><a href="#contact">Contact</a></li>
 		</ul> <!-- end nav-menu -->
@@ -40,57 +38,50 @@
 		  	<div class="bar2"></div>
 		  	<div class="bar3"></div>
 		</label> <!-- end nav icon -->
-	</nav> <!-- end navbar -->
+	</div> <!-- end navbar -->
 
-	<header>
-		<div class="home" id="home">
-			<div class="row">
-				<div class="col">
-					<h2>Hi I'm</h2>
-					<h1><strong>Fernalyn Mae</strong></h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<!-- header -->
+	<header class="home" id="home">
+		<div class="row">
+			<div class="col">
+				<h2>Hi I'm</h2>
+				<h1><strong>Fernalyn Mae</strong></h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<br>
+				<button type="button">Download CV</button>
+			</div> 
 
-					<button type="button">Download CV</button>
-				</div> 
+			<div class="col">
+				<!-- <img src="file:///E:/PCCD/Documents/Fernalyn%20Resume%20Website/Buendia,%20Fernalyn%20Mae_COB_BSIT_For%20regalia%20-%20FERNALYN%20MAE%20BUENDIA.jpg" class="pic-regalia"> -->
+			</div><!-- end col -->
+		</div> <!-- end row -->
+	</header> <!-- end home -->
 
-				<div class="col">
-					<!-- <img src="file:///E:/PCCD/Documents/Fernalyn%20Resume%20Website/Buendia,%20Fernalyn%20Mae_COB_BSIT_For%20regalia%20-%20FERNALYN%20MAE%20BUENDIA.jpg" class="pic-regalia"> -->
-				</div><!-- end col -->
-			</div> <!-- end row -->
-		</div> <!-- end home -->
-	</header> <!-- end header -->
-
+	<!-- about -->
 	<section class="about" id="about">
 		<div class="row">
 			<div class="col">
-				<img src="Fernalyn_Mae_COB_BSIT_For_formal.jpg" class="pic-formal">
+				<img src="file:///E:/PCCD/Documents/Fernalyn%20Resume%20Website/images/Fernalyn_Mae_COB_BSIT_For_formal.jpg" class="pic-formal">
 			</div>
 
 			<div class="col">
 				<h1>About Me</h1>
-				<p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+				<p>I am Fernalyn Mae Buendia, graduated last May 2021 of Bachelor of Science in Information Technology at Adventist University of the Philippines.
 				<br><br>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				I worked as a student assistant for 6 years in different departments. As a working student, I am trained to work hard and be dedicated in every task that I am assigned to. I attended On-The-Job-Training in Netto Solutions Consulting company from SRKK Malaysia as a Web Developer Intern thru online. I used WordPress and updated/edit existing websites based on customer wants/requirements from the portfolio, compare portfolio design from existing web design, and paperworks.
+				<br><br>
+				As of now, I know some basic programming languages such as HTML, CSS, PHP, Java, JavaScript, Bootstrap. Currently, I am watching Laravel tutorial and other tutorials to enhance my knowledge. In college, our Capstone title is “I-Teach Essential Learning App” it is a chore app tutorial for those who did not know basic skills. We used Microsoft PowerApps to complete our app and SharePoint to store the data.
+				<br><br>
+				I don’t have much experience in the IT field, but I am willing to train, to learn, to improve my skills, and to explore. I am seeking a challenging career that provides an opportunity to improve my skills & abilities. I am willing to be trained, to learn, to improve, and to explore.</p>
 			</div>
-		</div>
-			
+		<!-- </div> end row -->
 	</section> <!-- end about -->
 
+	<!-- education -->
 	<section class="education" id="education">
 		<div class="row">
 			<div class="col">
@@ -109,16 +100,17 @@
 				</ul>
 				<br>
 				<h2>2015</h2>
-				<h2>High School</h2>
+				<h2>Secondary</h2>
 				<p>Agusan National High School</p>
 				<br>
 				<h2>2011</h2>
-				<h2>Elementary</h2>
+				<h2>Primary</h2>
 				<p>Butuan Central Elementary School</p>
 			</div> <!-- end col -->
 		</div> <!-- end row -->
 	</section> <!-- end education -->
 
+	<!-- work -->
 	<section class="work" id="work">
 		<div class="row">
 			<div class="col">
@@ -168,110 +160,111 @@
 		</div> <!-- end row -->
 	</section> <!-- end work -->
 
-	<section class="skill">
+	<section class="skill" id="skill">
 		<div class="row">
 			<div class="col">
 				<h1>Skills <br> Proficiency</h1>
 			</div>
 
-			<div class="col skill-section">
-				<div class="bar-container">
-					<h3>HTML / CSS</h3>
+			<div class="col skill-container">
+				<div class="container">
 					<div class="progress">
-						<div class="progress-bar html-css" data-progress="80">
-							<span></span>
+						<h3>HTML / CSS</h3>
+						<div class="progress-bar">
+							<span class="percentage" data-width="80%"></span>
+						</div>
+					</div>
+				    <br>
+					<div class="progress">
+						<h3>BOOTSTRAP</h3>
+						<div class="progress-bar">
+							<span class="percentage" data-width="30%"></span>
 						</div>
 					</div>
 					<br>
-					<h3>Bootstrap</h3>
 					<div class="progress">
-						<div class="progress-bar bootstrap" data-progress="50">
-							<span></span>
+						<h3>PHP / JAVA / JAVASCRIPT</h3>
+						<div class="progress-bar">
+							<span class="percentage" data-width="20%"></span>
 						</div>
 					</div>
 					<br>
-					<h3>PHP / Java / Javascript</h3>
 					<div class="progress">
-						<div class="progress-bar php-java-javascript" data-progress="20">
-							<span></span>
-						</div>	
-					</div>
-					<br>
-					<h3>Sharepoint / Powerapps</h3>
-					<div class="progress">
-						<div class="progress-bar sharepoint-powerapps" data-progress="50">
-							<span></span>
+						<h3>SHAREPOINT / POWERAPPS</h3>
+						<div class="progress-bar">
+							<span class="percentage" data-width="50%"></span>
 						</div>
 					</div>
 					<br>
-					<h3>MySQL / Postgres</h3>
 					<div class="progress">
-						<div class="progress-bar mysql-postgres" data-progress="10">
-							<span></span>
+						<h3>MYSQL / POSTGRES</h3>
+						<div class="progress-bar">
+							<span class="percentage" data-width="10%"></span>
 						</div>
 					</div>
 					<br>
-					<h3>Laravel / VueJs</h3>
 					<div class="progress">
-						<div class="progress-bar laravel-vuejs" data-progress="5">
-							<span></span>
-						</div>	
-					</div>
-					<br>
-					<h3>React / TypeScript</h3>
-					<div class="progress">
-						<div class="progress-bar react-typescript" data-progress="5">
-							<span></span>
+						<h3>LARAVEL / VUEJS</h3>
+						<div class="progress-bar">
+							<span class="percentage" data-width="5%"></span>
 						</div>
 					</div>
-				</div> <!-- end bar-container -->
+					<br>
+					<div class="progress">
+						<h3>REACT / TYPESCRIPT</h3>
+						<div class="progress-bar">
+							<span class="percentage" data-width="5%"></span>
+						</div>
+					</div> <!-- end progress -->
+				</div> <!-- end container -->
 			</div> <!-- end col -->
 		</div> <!-- end row -->
 	</section> <!-- end skill -->
 
+	<!-- portfolio -->
 	<section class="portfolio" id="portfolio">
 		<h1>Portfolio</h1>
-
 		<div class="row-container">
 			<div class="card">
 				<div class="imgbox">
-					<img src="sample-image.jpg" alt="sample-image">
+					<img src="file:///E:/PCCD/Documents/Fernalyn%20Resume%20Website/images/sample-image.jpg" alt="sample-image">
 				</div>
 				<div class="intro">
 					<h3>Sample1</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					<a href="#" class="btn">Check Out</a>
+					<a href="#sample1" class="btn">Check Out</a>
 				</div> <!-- end intro -->
 			</div> <!-- end card -->
 
 			<div class="card">
 				<div class="imgbox">
-					<img src="sample-image.jpg" alt="sample-image">
+					<img src="file:///E:/PCCD/Documents/Fernalyn%20Resume%20Website/images/sample-image.jpg" alt="sample-image">
 				</div>
 				<div class="intro">
 					<h3>Sample2</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					<a href="#" class="btn">Check Out</a>
+					<a href="#sample2" class="btn">Check Out</a>
 				</div> <!-- end intro -->
 			</div> <!-- end card -->
 
 			<div class="card">
 				<div class="imgbox">
-					<img src="sample-image.jpg" alt="sample-image">
+					<img src="file:///E:/PCCD/Documents/Fernalyn%20Resume%20Website/images/sample-image.jpg" alt="sample-image">
 				</div>
 				<div class="intro">
 					<h3>Sample3</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					<a href="#" class="btn">Check Out</a>
+					<a href="#sample3" class="btn">Check Out</a>
 				</div> <!-- end intro -->
 			</div> <!-- end card -->
 		</div> <!-- end row -->
 	</section> <!-- end portfolio -->
 
+	<!-- contact -->
 	<section class="contact" id="contact">
 		<div class="row">
 			<div class="col">
-				<h1>Contact Me</h1>
+				<h1>Contact</h1>
 				<div class="contact-info">
 					<div class="box-info">
 						<div class="icon">
@@ -304,6 +297,10 @@
 							<p>Purok 7 Bading, Butuan City, Agusan Del Norte 8600</p>
 						</div>
 					</div> <!-- end box-info -->
+					<div>
+						
+					</div>
+					<button type="button">Download CV</button>
 					
 				</div> <!-- end contact-info -->
 			</div> <!-- end col -->
@@ -314,39 +311,32 @@
 		</div>
 	</section> <!-- end contact -->
 
-	<button onclick="topFunction"><span class="material-symbols-outlined arrow-up-button">keyboard_double_arrow_up</span></button>
+	<!-- top-button -->
+	<div id="arrow-up-button">
+		<button onclick="topFunction()" class="top-button"><span class="material-symbols-outlined">keyboard_double_arrow_up</span></button>
+	</div>
 
-	<footer>
-		<h4>Fernalyn Resume <span class="material-symbols-outlined">copyright</span></h4>
+	<!-- footer -->
+	<footer class="footer">
+		<h4>Fernalyn Resume Website <span class="material-symbols-outlined">copyright</span></h4>
 	</footer>
 
-<script type="text/javascript">
-	window.addEventListener("scroll", function() {
-		var nav = document.querySelector("nav");
-		nav.classList.toggle("sticky", window.scrollY > 0);
-	})
-</script>
+	<script>
+		var prevScrollpos = window.pageYOffset;
+		window.onscroll = function() {
+			var currentScrollPos = window.pageYOffset;
 
-<script type="text/javascript">
-	let mybutton = document.getElementById('.arrow-up-button');
-
-	window.onscroll = function() {scrollFunction()};
-
-	function scrollFunction() {
-		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-			mybutton.style.display = "block";
-		} 
-		else {
-			mybutton.style.display = "none";
+			if (prevScrollpos > currentScrollPos) {
+				document.getElementById("navbar").style.top = "0";
+			} else {
+				document.getElementById("navbar").style.top = "-80px";
+			}
+			prevScrollpos = currentScrollPos;
 		}
-	}
+	</script>
 
-	// When the user clicks on the button, scroll to the top of the document
-	function topFunction() {
-		document.body.scrollTop = 0;
-		document.documentElement.scrollTop = 0;
-	}
-</script>
+
+	<script src="progressbar.js"></script>
 
 </body>
 </html>

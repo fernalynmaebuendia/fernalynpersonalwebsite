@@ -112,7 +112,7 @@ h1 {
 	height: 100vh;
 	width: 100%;
 	background-size: cover;
-	background-image: linear-gradient(rgba(20, 39, 51,0.5), rgba(20, 39, 51,0.5)), url(file:///E:/PCCD/Documents/Fernalyn%20Resume%20Website/images/girlwithlaptop.jpg);
+	background-image: linear-gradient(rgba(20, 39, 51,0.5), rgba(20, 39, 51,0.5)), url("girlwithlaptop.jpg");
 	background-position: center;
 }
 

@@ -747,8 +747,72 @@ h1 {
 }
 
 @media screen and (max-width: 1000px) {
+	.about h1 {
+    font-size: 45px;
+	}
+
+	.about p {
+		font-size: 15.5px;
+	}
+
+	.about .pic-formal {
+		width: 70%; 
+		height: 70%;
+	}
+
+	.education h1 {
+    font-size: 45px;
+    padding-left: 5%;
+	}
+
+	.education h2 {
+		font-size: 15.5px;
+	}
+
+	.work h1 {
+    font-size: 45px;
+    padding-left: 5%;
+	}
+
+	.work h2 {
+		font-size: 15.5px;
+	}
+
+	.skill h1 {
+		padding-left: 5%;
+    font-size: 45px;
+	}
+
+	.skill h3 {
+		font-size: 15.5px;
+	}
+
+	.portfolio h1 {
+    font-size: 45px;
+	}
+
+	.portfolio h3 {
+    font-size: 15.5px;
+	}
+
+	.portfolio p {
+    font-size: 13px;
+	}
+
+	.contact h1 {
+    font-size: 45px;
+	}
+
+	.contact h3 {
+    font-size: 15.5px;
+	}
+
+	.contact p {
+    font-size: 13px;
+	}
+
 	.portfolio .card {
-    height: 275px;
+    height: 290px;
     width: 250px;
  	}
 
@@ -771,16 +835,26 @@ h1 {
 		height: 95vh;
 	}
 
+	.about .pic-formal {
+		width: 73%; 
+		height: 73%;
+	}
+
 	.work {
 		height: 87vh;
 	}
+
+	.portfolio .card {
+		height: 280px;
+    width: 240px;
+ 	}
 }
 
 @media screen and (max-width: 900px) {
-	.portfolio .card {
-    height: 250px;
-    width: 225px;
- 	}
+ 	.about .pic-formal {
+		width: 75%; 
+		height: 75%;
+	}
 
  	.contact .giphy-embed {
     padding-left: 10%;
@@ -789,24 +863,73 @@ h1 {
 	}
 }
 
-@media screen and (max-width: 850px) {
-	.about {
-		height: 95vh;
+@media screen and (max-width: 911px) {
+	.work {
+		height: 90vh;
 	}
 
+	.work h1 {
+    height: 760px;
+	}
+}
 
-/*@media screen and (min-width: 768px) {
+@media screen and (max-width: 890px) {
+	.portfolio .card {
+    width: 90%;
+ 	}
+}
+
+	@media screen and (max-width: 872px) {
+	.work h1 {
+    height: 780px;
+	}
+}
+
+
+@media screen and (max-width: 850px) {
 	.about {
-		height: 110vh;
+		height: 105vh;
 	}
 
 	.about .pic-formal {
 		width: 75%; 
 		height: 75%;
 	}
-}*/
 
-/*@media screen and (max-width: 768px) {
+	.education {
+    height: 50vh;
+  }
+
+  .education h1 {
+  	height: 300px;
+  }
+
+  .work {
+    height: 95vh;
+	}
+
+  .work h1 {
+    height: 800px;
+	}
+}
+
+@media screen and (max-width: 816px) {
+	.education h1 {
+    height: 320px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.about {
+		height: 107vh;
+	}
+
+	.about .pic-formal {
+		width: 78%; 
+		height: 78%;
+	}
+
+@media screen and (max-width: 768px) {
 	.home .row {
 		text-align: center;
     padding: 0 5% 0 5%;
@@ -832,26 +955,13 @@ h1 {
     position: absolute;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .about .pic-formal {
+		width: 50%; 
+		height: 50%;
+	}
 
   .education {
-  	height: 55vh;
+  	height: 57vh;
   }
 
   .education .row {
@@ -861,27 +971,24 @@ h1 {
 
   .education .col {
      flex-basis: 0; 
+     te
 	}
 
   .education h1 {
+  	text-align: center;
   	margin: 0;
   	padding: 0;
+  	border-right: none;
+  	border-bottom: 5px solid #57A7D9;
+  	height: 70px;
   }
 
   .education-effect-right {
   	margin-top: 35px;
   }
 
-  .education-line {
-  	margin-top: 13px;
-    margin-left: 90px;
-  	position: absolute;
-		width: 300px;
-    height: 5px;
-	}
-
 	.work {
-  	height: 90vh;
+  	height: 113vh;
   }
 
 	.work .row {
@@ -897,22 +1004,17 @@ h1 {
   	text-align: center;
   	margin: 0;
   	padding: 0;
+  	border-right: none;
+  	border-bottom: 5px solid #57A7D9;
+  	height: 130px;
   }
 
   .work-effect-right {
   	margin-top: 35px;
   }
 
-  .work-line {
-  	margin-top: 13px;
-    margin-left: 90px;
-  	position: absolute;
-		width: 300px;
-    height: 5px;
-	}
-
 	.skill {
-		height: 115vh;
+		height: 117vh;
 	}
 
 	.skill .row {
@@ -958,7 +1060,7 @@ h1 {
   }
 
   .contact {
-  	height: 135vh;
+  	height: 140vh;
   }
 
   .contact .row {
@@ -970,7 +1072,7 @@ h1 {
 	}
 
 	.contact .contact-giphy {
-		margin-top: 50px;
+		margin-top: 20px;
 		align-items: center;
 		align-content: center;
 		justify-content: center;
@@ -979,11 +1081,12 @@ h1 {
 	}
 
   .contact .giphy-embed {
-		width: 400px;
-		height: 400px;
+  	margin: 0;
+		padding: 0;
+		width: 500px;
+		height: 500px;
   }
 }
-
 
 @media screen and (max-width: 600px) {
   .home h1 {
@@ -998,164 +1101,23 @@ h1 {
 		font-size: 15px;
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  .education {
-  	height: 55vh;
-  }
-
-  .education .row {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .education .col {
-     flex-basis: 0; 
+	.contact {
+		height: 135vh;
 	}
 
-  .education h1 {
-  	margin: 0;
-  	padding: 0;
+	.contact .giphy-embed {
+		width: 450px;
+		height: 450px;
   }
+}
 
-  .education-effect-right {
-  	margin-top: 35px;
-  }
-
-  .education-line {
-  	margin-top: 13px;
-    margin-left: 90px;
-  	position: absolute;
-		width: 300px;
-    height: 5px;
-	}
-
-	.work {
-  	height: 90vh;
-  }
-
-	.work .row {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .work .col {
-     flex-basis: 0; 
-	}
-
-  .work h1 {
-  	text-align: center;
-  	margin: 0;
-  	padding: 0;
-  }
-
-  .work-effect-right {
-  	margin-top: 35px;
-  }
-
-  .work-line {
-  	margin-top: 13px;
-    margin-left: 90px;
-  	position: absolute;
-		width: 300px;
-    height: 5px;
-	}
-
-	.skill {
-		height: 115vh;
-	}
-
-	.skill .row {
-		padding: 0 5%;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .skill .col {
-    flex-basis: 0;
-	}
-	
-	.skill-container {
-		width: 100%;
-		margin-top: 50px;
-	}
-	
-	.skill-container .container {
-    width: 100%;
-  }
-
-	.skill h1 {
-		text-align: center;
-	}
-
-	.skill-container h3 {
-		text-align: center;
-	}
-
-	.portfolio {
+@media screen and (max-width: 600px) {
+	.contact {
 		height: 130vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
-  .portfolio .row-container {
-    margin-top: 80px;
-  }
-
-  .portfolio .card {
-    margin: 15px;
-  }
-
-  .contact {
-  	height: 135vh;
-  }
-
-  .contact .row {
-    flex-direction: column;
-  }
-
-  .contact .col {
-     flex-basis: 0; 
 	}
 
-	.contact .contact-giphy {
-		margin-top: 50px;
-		align-items: center;
-		align-content: center;
-		justify-content: center;
-		justify-items: center;
-		text-align: center;
-	}
-
-  .contact .giphy-embed {
+	.contact .giphy-embed {
 		width: 400px;
 		height: 400px;
   }
 }
-
-@media screen and (max-width: 480px) {
-	
-}
-
-@media screen and (max-width: 320px) {
-	
-}*/

@@ -222,16 +222,6 @@ h1 {
 	flex-basis: 50%;
 }
 
-/*.education-line {
-	left: 0;
-	right: 0;
-	margin-top: -60px;
-	margin-left: 820px;
-	background-color: #57A7D9;
-	width: 5px;
-	height: 273px;
-}*/
-
 .education h1 {
 	padding-left: 20%;
 	margin-right: 20px;
@@ -261,7 +251,7 @@ h1 {
 
 .work {
 	background-color: #244559;
-	height: 85vh;
+	height: 93vh;
 }
 
 .work .row {
@@ -274,15 +264,6 @@ h1 {
 	flex-basis: 50%;
 }
 
-/*.work-line {
-	left: 0;
-	right: 0;
-	margin-top: -128px;
-	margin-left: 820px;
-	background-color: #57A7D9;
-	width: 5px;
-	height: 635px;
-}*/
 
 .work h1 {
 	color: white;
@@ -290,7 +271,7 @@ h1 {
 	margin-right: 20px;
 	font-size: 50px;
 	border-right: 5px solid #57A7D9;
-	height: 720px;
+	height: 800px;
 }
 
 .work h2, h3 {
@@ -608,7 +589,7 @@ h1 {
 
 @media screen and (max-width: 1421px) {
 	.work h1 {
-		height: 740px;
+		height: 800px;
 	}
 }
 
@@ -863,13 +844,23 @@ h1 {
 	}
 }
 
-@media screen and (max-width: 911px) {
+@media screen and (max-width: 950px) {
 	.work {
-		height: 90vh;
+		height: 93vh;
 	}
 
 	.work h1 {
-    height: 760px;
+		height: 800px;
+	}
+}
+
+@media screen and (max-width: 911px) {
+	.work {
+		height: 93vh;
+	}
+
+	.work h1 {
+    height: 800px;
 	}
 }
 
@@ -881,7 +872,7 @@ h1 {
 
 	@media screen and (max-width: 872px) {
 	.work h1 {
-    height: 780px;
+    height: 800px;
 	}
 }
 
@@ -910,6 +901,12 @@ h1 {
 
   .work h1 {
     height: 800px;
+	}
+}
+
+@media screen and (max-width: 821px) {
+	.work h1 {
+    height: 820px;
 	}
 }
 

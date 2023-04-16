@@ -24,8 +24,8 @@
 	<!-- navbar -->
 	<div class="navbar" id="navbar">
 		<input id="nav-toggle" type="checkbox">
-		<div class="logo"><a href="#home">FMB</a></div>
-		<ul class="nav-menu">
+		<div class="logo"><a href="#">FMB</a></div>
+		<ul class="nav-menu" id="nav-menu">
 			<li><a href="#home" class="active">Home</a></li>
 			<li><a href="#about">About</a></li>
 			<li><a href="#education">Academic & Work</a></li>
@@ -34,7 +34,7 @@
 			<li><a href="#contact">Contact</a></li>
 		</ul> <!-- end nav-menu -->
 
-		<label for="nav-toggle" class="nav-icon">
+		<label for="nav-toggle" class="nav-toggle" id="nav-toggle">
 			<div class="bar1"></div>
 		  	<div class="bar2"></div>
 		  	<div class="bar3"></div>
@@ -150,22 +150,22 @@
 				
 				<h2>June 2020 - Dec 2020</h2>
 				<h2>Cashier / Merchandiser / Repacker</h2>
-				<p>University Store, Adventist University of the Philippines</p>
+				<p>University Store, <br> Adventist University of the Philippines</p>
 				<br>
 				
 				<h2>July 2019 - May 2020</h2>
 				<h2>Cashier</h2>
-				<p>Information & Communication Technology Services, Adventist University of the Philippines</p>
+				<p>Information & Communication Technology Services, <br> Adventist University of the Philippines</p>
 				<br>
 				
 				<h2>Aug 2016 - July 2019</h2>
 				<h2>Cashier / Machine Opt. / Asst. Binder</h2>
-				<p>Copy & Print Store, Adventist University of the Philippines</p>
+				<p>Copy & Print Store, <br> Adventist University of the Philippines</p>
 				<br>
 			
 				<h2>Aug 2015 - July 2016</h2>
 				<h2>Secretary</h2>
-				<p>Printing Press, Adventist University of the Philippines</p>
+				<p>Printing Press, <br> Adventist University of the Philippines</p>
 			</div> <!-- end col -->
 		</div> <!-- end row -->
 	</section> <!-- end work -->
@@ -397,6 +397,26 @@
 				}
 				prevScrollpos = currentScrollPos;
 			}
+
+		//navbar drop
+		const navbar = document.getElementById("navbar");
+		const navIconToggle = document.getElementById("nav-toggle");
+		const navbarMenuToggle = document.getElementById("nav-menu");
+
+		/*document.onclick = function(e) {
+			if (e.target.id !== "navbar" && e.target.id !== "navIconToggle" && e.target.id !== "navbarMenuToggle") {
+				navIconToggle.classList.remove("active");
+				navbarMenuToggle.classList.remove("active");
+			}
+		}*/
+
+		navIconToggle.onclick = function() {
+			navIconToggle.classList.toggle("active");
+			navbarMenuToggle.classList.toggle("active");
+		}
+
+		
+			
 	</script>
 
 

@@ -24,7 +24,6 @@
 	<!-- navbar -->
 	<div class="navbar" id="navbar">
 		<input id="nav-toggle" type="checkbox">
-		<div class="logo"><a href="#">FMB</a></div>
 		<ul class="nav-menu" id="nav-menu">
 			<li><a href="#home" class="active">Home</a></li>
 			<li><a href="#about">About</a></li>
@@ -248,7 +247,7 @@
 
 			<div class="card">
 				<div class="imgbox">
-					<img src="sample-image.jpg" alt="sample-image">
+					<img src="sample-image2.jpg" alt="sample-image">
 				</div>
 				<div class="intro">
 					<h3>Sample2</h3>
@@ -259,7 +258,29 @@
 
 			<div class="card">
 				<div class="imgbox">
-					<img src="sample-image.jpg" alt="sample-image">
+					<img src="sample-image3.jpg" alt="sample-image">
+				</div>
+				<div class="intro">
+					<h3>Sample3</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<a href="#sample3" class="btn">Check Out</a>
+				</div> <!-- end intro -->
+			</div> <!-- end card -->
+
+			<div class="card">
+				<div class="imgbox">
+					<img src="sample-image4.jpg" alt="sample-image">
+				</div>
+				<div class="intro">
+					<h3>Sample3</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<a href="#sample3" class="btn">Check Out</a>
+				</div> <!-- end intro -->
+			</div> <!-- end card -->
+
+			<div class="card">
+				<div class="imgbox">
+					<img src="sample-image5.jpg" alt="sample-image">
 				</div>
 				<div class="intro">
 					<h3>Sample3</h3>
@@ -269,6 +290,8 @@
 			</div> <!-- end card -->
 		</div> <!-- end row -->
 	</section> <!-- end portfolio -->
+
+
 
 	<!-- contact -->
 	<section class="contact" id="contact">
@@ -367,6 +390,7 @@
 	</footer>
 
 	<script>
+		// Up button
 		let mybutton = document.getElementById("arrow-up-button");
 
 		window.onscroll = function() {scrollFunction()};
@@ -386,7 +410,9 @@
 			document.documentElement.scrollTop = 0;
 		}
 
-		var prevScrollpos = window.pageYOffset;
+
+		// Sticky navbar
+		/*var prevScrollpos = window.pageYOffset;
 		window.onscroll = function() {
 				
 		var currentScrollPos = window.pageYOffset;
@@ -396,9 +422,16 @@
 				document.getElementById("navbar").style.top = "-80px";
 				}
 				prevScrollpos = currentScrollPos;
-			}
+			}*/
 
-		//navbar drop
+		// Sticky change color navbar
+		window.addEventListener("scroll", function () {
+			var navbar = document.querySelector(".navbar");
+			navbar.classList.toggle("sticky", window.scrollY > 0)
+		})
+
+
+		//navbar toggle
 		const navbar = document.getElementById("navbar");
 		const navIconToggle = document.getElementById("nav-icon");
 		const navbarMenuToggle = document.getElementById("nav-menu");

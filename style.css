@@ -170,6 +170,7 @@ h1 {
 	padding: 0 5%;
 	display: flex;
 	height: 100%;
+	width: auto;
 	align-items: center;
 	align-content: center;
 }
@@ -355,7 +356,7 @@ h1 {
 	justify-content: center;
 	padding: 150px 10% 0 10%;
 	background-color: #244559;
-	height: 110vh;
+	height: 115vh;
 }
 
 .portfolio h1 {
@@ -369,7 +370,7 @@ h1 {
 
 .portfolio .row-container {
 	width: 100%;
-  margin-top: 50px;
+  margin-top: 20px;
   display: flex;
   position: relative;
   align-items: center;
@@ -467,7 +468,7 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	color: black;
-	height: 98vh;
+	height: 100vh;
 	color: black;
 }
 
@@ -569,11 +570,29 @@ h1 {
 	font-size: 14px;
 }
 
-@media screen and (max-width: 1200px) {
-	
+/*@media screen and (max-width: 1800px) {
+	.pic-formal {
+		width: 55%;
+    height: 55%;
+	}
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1700px) {
+	.pic-formal {
+		width: 60%;
+    height: 60%;
+	}
+}
+
+@media screen and (max-width: 1600px) {
+	.pic-formal {
+		width: 65%;
+    height: 65%;
+	}
+}*/
+
+
+/*@media screen and (max-width: 1200px) {
 	.navbar .nav-menu {
 		float: none;
 		position: fixed;
@@ -616,8 +635,23 @@ h1 {
 		transform: translate(0, -11px) rotate(45deg);
 	}
 
+}*/
+
+@media screen and (max-width: 1100px) {
+	.about {
+		height: 105vh;
+	}
+
+	.about .row {
+		padding-top: 5%;
+	}
 }
 
+@media screen and (max-width: 1050px) {
+	.about .row {
+		padding-top: 5%;
+	}
+}
 
 @media screen and (max-width: 1024px) {
 	.home h1 {
@@ -637,10 +671,34 @@ h1 {
 	.home h2 {
     font-size: 40px;
 	}
+
+	.about {
+		height: 110vh;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.about {
+		height: 118vh;
+	}
 }
 
 @media screen and (max-width: 768px) {
-	
+	.about {
+		height: 123vh;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.about {
+		height: 130vh;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.about {
+		height: 133vh;
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -651,6 +709,21 @@ h1 {
 	.home h2 {
     font-size: 35px;
 	}
+
+	.about {
+		padding-top: 120px;
+		height: 143vh;
+	}
+
+	.about .row {
+		height: auto;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .about h1 {
+  	padding-top: 10%;
+  }
 }
 
 @media screen and (max-width: 550px) {

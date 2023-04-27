@@ -603,6 +603,20 @@ form .btn2 {
 	}
 }
 
+@media only screen and (max-width: 691px) {
+	.layer {
+		font-size: 20px;
+		padding: 0 40px;
+	}
+	
+	.layer a {
+		font-size: 16px;
+		line-height: 60px;
+		width: 60px;
+		height: 60px;
+	}
+}
+
 @media only screen and (max-width: 480px) {
 	.header-text {
 		margin-top: 65%;

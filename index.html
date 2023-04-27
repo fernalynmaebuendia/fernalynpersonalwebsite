@@ -194,7 +194,7 @@
 					</div>
 				</div>
 				<div class="port">
-					<img src="images/sample-image8.jpg">
+					<img src="images/sample-image6.jpg">
 					<div class="layer">
 						<h3>Hiking</h3>
 						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -313,6 +313,15 @@
 			})
 			.catch(error => console.error('Error!', error.message))
 		})
+	</script>
+
+	<script>
+		window.addEventListener('beforeunload', function() {
+			window.scrollTo({
+				top:0,
+				behavior: "smooth"
+			})
+		});
 	</script>
 
 	<script src="progressbar.js"></script>

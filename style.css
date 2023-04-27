@@ -604,15 +604,7 @@ form .btn2 {
 }
 
 @media only screen and (max-width: 480px) {
-	.header-text {
-		margin-top: 60%;
-		font-size: 20px;
-	}
-}
-
-@media only screen and (max-width: 320px) {
-	.header-text {
-		margin-top: 60%;
-		font-size: 15px;
+	.header-text h1 {
+		font-size: 35px;
 	}
 }

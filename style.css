@@ -579,6 +579,9 @@ form .btn2 {
 @media only screen and (max-width: 600px) {
 	.header-text {
 		margin-top: 60%;
+	}
+
+	.header-text h4 {
 		font-size: 25px;
 	}
 
@@ -595,30 +598,58 @@ form .btn2 {
 	}
 
 	.tab-links {
-		font-size: 16px;
+		font-size: 18px;
 		margin-right: 20px;
 	}
 }
 
 @media only screen and (max-width: 480px) {
+	.header-text {
+		margin-top: 65%;
+	}
+
+	#header .logo {
+		font-size: 30px;
+	}
+
+	.header-text h4 {
+		font-size: 23px;
+	}
+
+	.header-text p {
+		font-size: 16px;
+	}
+	
 	.header-text h1 {
 		font-size: 35px;
 	}
 }
 
 @media only screen and (max-width: 400px) {
+	.header-text {
+		margin-top: 75%;
+	}
+
+	.header-text h4 {
+		font-size: 20px;
+	}
+
+	.header-text p {
+		font-size: 14px;
+	}
+	
 	.header-text h1 {
 		font-size: 30px;
 	}
 }
 
 @media only screen and (max-width: 320px) {
-	#header .logo {
-		font-size: 30px;
+	.header-text {
+		margin-top: 80%;
+		
 	}
 
-	.header-text {
-		margin-top: 75%;
-		font-size: 15px;
+	.header-text h1 {
+		font-size: 25px;
 	}
 }

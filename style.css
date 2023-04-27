@@ -550,10 +550,19 @@ form .btn2 {
 	#header .logo {
 		font-size: 50px;
 	}
+	.about-col-1 {
+		text-align: center;
+	}
+	
+	.about-col-1 img {
+		width: 60%;
+		height: 100%;
+	}
 
 	.layer {
 		font-size: 12px;
 		padding: 0 20px;
+		
 	}
 	
 	.layer a {

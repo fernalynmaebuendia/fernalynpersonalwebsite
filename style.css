@@ -64,7 +64,7 @@ body {
 	color: var(--main-color);
 }
 
-#header h1 {
+#header .logo {
 	margin: 10px 0;
 }
 
@@ -110,7 +110,6 @@ nav .fa {
 .header-text {
 	margin-top: 20%;
 	font-size: 30px;
-	line-height: 40px
 }
 
 .header-text h1 {
@@ -551,6 +550,10 @@ form .btn2 {
 }
 
 @media only screen and (max-width: 768px) {
+	#header .logo {
+		font-size: 50px;
+	}
+
 	.layer {
 		font-size: 12px;
 		padding: 0 20px;

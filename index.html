@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fernalyn Resume</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,200" />
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	
+	
+</head>
+<body>
+	<!-- header -->
+	<div class="header" id="header">
+		<div class="container">
+			<nav>
+				<h1 class="logo"><span>F</span>ernalyn</h1>
+				<ul id="side-menu">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<i class="fa fa-times" aria-hidden="true" onclick="closeMenu()"></i>
+				</ul>
+				<i class="fa fa-bars" aria-hidden="true" onclick="openMenu()"></i>
+			</nav> <!-- end nav -->
+
+			<div class="header-text">
+				<h4>Web Developer</p>
+				<h1>Hi, I'm <span>Fernalyn</span></h1>
+				<p>I am building my own resume website as my own portfolio.</p><br>
+				<p>P.S. this design is not mine and I'm practicing building websites. <br> I just love his design and responsive of his website. <br> Thanks to Kevin, you can find his <i class="fa fa-youtube-play" style="color: red;" aria-hidden="true"></i> YouTube Channel "Easy Tutorials"</p>
+			</div><!-- end header-text -->
+		</div><!-- end container -->
+	</div><!-- end header -->
+
+	<!-- about -->
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="about-col-1">
+					<img src="images/Fern_formal_small.jpg" class="pic-formal">
+				</div><!-- end about-col-1 -->
+	
+				<div class="about-col-2">
+					<h1 class="sub-title">About</h1>
+					<p>I am Fernalyn Mae Buendia, graduated last May 2021 taking Bachelor of Science in Information Technology at Adventist University of the Philippines.
+					<br><br>
+					My recent job is a Sales Admin at Better Solutions Enterprises. My responsibilities is to validate customers who is interested in applying Globe Fiber Wi-Fi at their home and to monitor the status of their applications.  
+					<br><br>
+					I worked as a student assistant for 6 years in different departments. As a working student, I am trained to work hard and be dedicated in every task that I am assigned to. I attended On-The-Job-Training in Netto Solutions Consulting company from SRKK Malaysia as a Web Developer Intern thru online. I used WordPress to update/edit exist websites based on customer wants/requirements from the portfolio, compare markup design portfolio from existing web design, and paperworks.
+					In college, our Capstone title is “I-Teach Essential Learning App” it is a chore app tutorial for those who did not know basic skills. We used Microsoft PowerApps to complete our app and SharePoint to store the data.
+					<br><br>
+					As of now, I know some basic programming languages such as HTML, CSS, PHP, Java, JavaScript, Bootstrap. Currently, I am watching some programming tutorials to enhance my knowledge.
+					<br><br>
+					I don’t have much experience in the IT field, but I am willing to train, to learn, to improve my skills, and to explore. I am seeking a challenging career that provides an opportunity to improve my skills & abilities. I am willing to be trained, to learn, to improve, and to explore.</p>
+
+					<div class="tab-titles">
+						<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+						<p class="tab-links" onclick="opentab('experience')">Experience</p>
+						<p class="tab-links" onclick="opentab('education')">Education</p>
+					</div><!-- end tab-titles -->
+
+					<div class="tab-contents active-tab" id="skills">
+						<div class="skill-container">
+							<div class="progress">
+								<h4>HTML / CSS</h4>
+								<div class="progress-bar">
+									<span class="percentage" data-width="80%"></span>
+								</div>
+							</div><!-- end progress -->
+							<br><br>
+							<div class="progress">
+								<h4>BOOTSTRAP</h4>
+								<div class="progress-bar">
+									<span class="percentage" data-width="30%"></span>
+								</div>
+							</div><!-- end progress -->
+							<br><br>
+							<div class="progress">
+								<h4>PHP / JAVA / JAVASCRIPT</h4>
+								<div class="progress-bar">
+									<span class="percentage" data-width="20%"></span>
+								</div>
+							</div><!-- end progress -->
+							<br><br>
+							<div class="progress">
+								<h4>SHAREPOINT / POWERAPPS</h4>
+								<div class="progress-bar">
+									<span class="percentage" data-width="50%"></span>
+								</div>
+							</div><!-- end progress -->
+							<br><br>
+							<div class="progress">
+								<h4>MYSQL / POSTGRES</h4>
+								<div class="progress-bar">
+									<span class="percentage" data-width="10%"></span>
+								</div>
+							</div><!-- end progress -->
+							<br><br>
+							<div class="progress">
+								<h4>LARAVEL / VUEJS</h4>
+								<div class="progress-bar">
+									<span class="percentage" data-width="5%"></span>
+								</div>
+							</div><!-- end progress -->
+							<br><br>
+							<div class="progress">
+								<h4>REACT / TYPESCRIPT</h4>
+								<div class="progress-bar">
+									<span class="percentage" data-width="5%"></span>
+								</div>
+							</div><!-- end progress -->
+						</div><!-- end skill container -->
+					</div><!-- end tab-content -->
+
+					<div class="tab-contents" id="experience">
+						<ul>
+							<li><span>April 2023 - Present</span><br>IT Support Staff at 1D Manpower Services</li>
+							<li><span>December 2021 - December 2022</span><br>Sales Admin at Better Solutions Enterprise</li>
+							<li><span>February 2021 - May 2021</span><br>Web Developer at Netto Solutions Consulting</li>
+							<li><span>June 2020 - Dec 2020</span><br>Cashier / Merchandiser / Repacker at University Store, Adventist University of the Philippines</li>
+							<li><span>July 2019 - May 2020</span><br>Information & Communication Technology Services. Adventist University of the Philippines</li>
+							<li><span>Aug 2016 - July 2019</span><br>Cashier / Machine Opt. / Asst. Binder at Copy & Print Store, Adventist University of the Philippines</li>
+							<li><span>Aug 2015 - July 2016</span><br>Secretary at Printing Press, Adventist University of the Philippines</li>
+						</ul>
+					</div><!-- end tab-content -->
+
+					<div class="tab-contents" id="education">
+						<ul>
+							<li><span>2021</span><br>Bachelor of Science in Information Technology at Adventist University of the Philippines</li>
+							<li><span>2015</span><br>Secondary at Agusan National High School</li>
+							<li><span>2011</span><br>Primary at Butuan Central Elementary School</li>
+						</ul>
+					</div><!-- end tab-content -->
+				</div><!-- end col-2 --> 
+			</div><!-- end row -->
+		</div> <!-- end container -->
+	</div><!-- end about -->
+
+	<!-- services -->
+	<div id="services">
+		<div class="container">
+			<h1 class="sub-title">Services</h1>
+			<div class="service-list">
+				<div>
+					<i class="material-symbols-outlined">code</i>
+					<h2>Front-End</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis fugit, quo, in ab voluptate possimus consequatur iste aliquid ad unde eius accusantium quae porro laudantium dicta deserunt qui magni?</p>
+					<a href="#">Learn More</a>
+				</div><!-- end service front-end -->
+				<div>
+					<i class="material-symbols-outlined">settings</i>
+					<h2>Back-End</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis fugit, quo, in ab voluptate possimus consequatur iste aliquid ad unde eius accusantium quae porro laudantium dicta deserunt qui magni?</p>
+					<a href="#">Learn More</a>
+				</div><!-- end service back-end -->
+				<div>
+					<i class="material-symbols-outlined">developer_mode</i>
+					<h2>Mobile App</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis fugit, quo, in ab voluptate possimus consequatur iste aliquid ad unde eius accusantium quae porro laudantium dicta deserunt qui magni?</p>
+					<a href="#">Learn More</a>
+				</div><!-- end service mobile -->
+			</div><!-- end services-list -->
+		</div><!-- end container -->
+	</div><!-- end services -->
+
+	<!-- portfolio -->
+	<div id="portfolio">
+		<div class="container">
+			<h1 class="sub-title">Portfolio</h1>
+			<div class="port-list">
+				<div class="port">
+					<img src="images/sample-image.jpg">
+					<div class="layer">
+						<h3>Social Media</h3>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+						<a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+					</div>
+				</div><!-- end port -->
+				<div class="port">
+					<img src="images/sample-image2.jpg">
+					<div class="layer">
+						<h3>Foods</h3>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+						<a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+					</div>
+				</div><!-- end port -->
+				<div class="port">
+					<img src="images/sample-image6.jpg">
+					<div class="layer">
+						<h3>Hiking</h3>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+						<a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+					</div>
+				</div><!-- end port -->
+			</div><!-- end port-list -->
+			<a href="#" class="btn">See more</a> <!-- see more button -->
+		</div><!-- end container -->
+	</div><!-- end portfolio -->
+
+	<!-- hobbies -->
+	<div id="hobbies">
+		<div class="container">
+			<h1 class="sub-title">What I Love</h1>
+			<div class="row">
+				<div class="hobbies-col-1">
+					<div class="hobbies-wrap">
+						<ul> 
+							<li><img src="images/milky.jpg"></li>
+							<li><img src="images/ash.jpg"></li>
+							<li><img src="images/bjourn.jpg"></li>
+							<li><img src="images/skye&raven.jpg"></li>
+							<li><img src="images/Fernalyn_with_cat.jpg"></li>
+							<li><img src="images/fudgee.jpg"></li>
+						</ul>	
+					</div><!-- end hobbies-wrap -->
+				</div><!-- end hobbies-col-1 -->
+
+				<div class="hobbies-col-2">
+					<h2>Cats and Dogs</h2>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus dolor iusto, perferendis expedita quo nesciunt voluptatem officiis ea, suscipit voluptates minus eius ab repellendus ullam soluta libero voluptatum perspiciatis sed. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet impedit, deleniti ad ut eius qui corporis saepe odio distinctio excepturi at ea autem quis repellendus sunt rem, alias exercitationem nobis.
+					<br><br>
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus dolor iusto, perferendis expedita quo nesciunt voluptatem officiis ea, suscipit voluptates minus eius ab repellendus ullam soluta libero voluptatum perspiciatis sed. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet impedit, deleniti ad ut eius qui corporis saepe odio distinctio excepturi at ea autem quis repellendus sunt rem, alias exercitationem nobis.
+					</p>
+				</div><!-- end hobbies-col-2 -->
+				
+				<div class="hobbies-col-3">
+					<h2>Movies, Manga & Anime</h2>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus dolor iusto, perferendis expedita quo nesciunt voluptatem officiis ea, suscipit voluptates minus eius ab repellendus ullam soluta libero voluptatum perspiciatis sed. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet impedit, deleniti ad ut eius qui corporis saepe odio distinctio excepturi at ea autem quis repellendus sunt rem, alias exercitationem nobis.
+					<br><br>
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus dolor iusto, perferendis expedita quo nesciunt voluptatem officiis ea, suscipit voluptates minus eius ab repellendus ullam soluta libero voluptatum perspiciatis sed. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet impedit, deleniti ad ut eius qui corporis saepe odio distinctio excepturi at ea autem quis repellendus sunt rem, alias exercitationem nobis.
+					</p>
+				</div><!-- end hobbies-col-3 -->
+
+				<div class="hobbies-col-4">
+					<div class="hobbies-wrap">
+						<ul> 
+							<!-- <li><img src="images/movies.png"></li> -->
+							<li><img src="images/anime.avif"></li>
+							<li><img src="images/manga.jpg"></li>
+						</ul>	
+					</div><!-- end hobbies-wrap -->
+					
+				</div><!-- end hobbies-col-4 -->
+
+				<div class="hobbies-col-5">
+					<div class="hobbies-wrap">
+						<ul> 
+							<li><img src="images/food.jpg"></li>
+							<li><img src="images/food1.jpg"></li>
+						</ul>	
+					</div><!-- end hobbies-wrap -->
+				</div><!-- end hobbies-col-1 -->
+
+				<div class="hobbies-col-6">
+					<h2>Food</h2>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus dolor iusto, perferendis expedita quo nesciunt voluptatem officiis ea, suscipit voluptates minus eius ab repellendus ullam soluta libero voluptatum perspiciatis sed. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet impedit, deleniti ad ut eius qui corporis saepe odio distinctio excepturi at ea autem quis repellendus sunt rem, alias exercitationem nobis.
+					<br><br>
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus dolor iusto, perferendis expedita quo nesciunt voluptatem officiis ea, suscipit voluptates minus eius ab repellendus ullam soluta libero voluptatum perspiciatis sed. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet impedit, deleniti ad ut eius qui corporis saepe odio distinctio excepturi at ea autem quis repellendus sunt rem, alias exercitationem nobis.
+					</p>
+				</div><!-- end hobbies-col-2 -->
+			</div><!-- end row -->
+		</div><!-- end container -->
+	</div><!-- end hobbies -->
+
+	<!-- contact -->
+	<div id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-col-1">
+					<h1 class="sub-title">Contact Me</h1>
+					<p><i class="fa fa-map-marker" style="margin-right: 20px;" aria-hidden="true"></i> Butuan City, Agusan Del Norte 8600</p>
+					<p><i class="fa fa-envelope" style="margin-right: 10px;" aria-hidden="true"></i> fernalynbuendia24@gmail.com</p>
+					<p><i class="fa fa-phone-square" style="margin-right: 14px;" aria-hidden="true"></i>09485066578</p>
+					<div class="social-icons">
+						<a href="https://www.facebook.com/pangit.taba.7/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+					</div>
+					<a href="images/Fernalyn Mae Buendia - B (1).pdf" download class="btn btn2">Download CV</a>
+				</div><!-- end contact-col-1 -->
+
+				<div class="contact-col-2">
+					<form name="submit-to-google-sheet">
+						<input type="text" name="Name" placeholder="Your Name" required>
+						<input type="text" name="Email" placeholder="Your Email" required>
+						<textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+						<button type="submit" class="btn btn2">Submit</button>
+					</form>
+					<span id="msg"></span> <!-- msg alert -->
+				</div><!-- end contact-col-2 -->
+			</div><!-- end row -->
+		</div><!-- end container -->
+
+		<!-- footer -->
+		<footer class="footer">
+			<p>Fernalyn Resume Website <i class="fa fa-copyright" aria-hidden="true"></i> 2023</p>
+		</footer><!-- end footer -->
+	</div><!-- end contact -->
+
+	<!-- top-arbutton -->
+	<div id="arrow-up-button">
+		<button onclick="topFunction()" class="top-button"><span class="material-symbols-outlined">keyboard_double_arrow_up</span></button>
+	</div><!-- end top-button -->
+
+	<script src="myscript.js"></script>
+	<script src="submitform.js"></script>
+</body>
+</html>

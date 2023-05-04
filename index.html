@@ -5,41 +5,45 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Fernalyn Resume</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-
 	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,200" />
-
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-	
 	
 </head>
 <body>
 	<!-- header -->
 	<div class="header" id="header">
 		<div class="container">
-			<nav>
-				<h1 class="logo"><span>F</span>ernalyn</h1>
-				<ul id="side-menu">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<i class="fa fa-times" aria-hidden="true" onclick="closeMenu()"></i>
-				</ul>
-				<i class="fa fa-bars" aria-hidden="true" onclick="openMenu()"></i>
-			</nav> <!-- end nav -->
+			<div class="sidebar-icon">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div><!-- end sidebar-icon -->
 
-			<div class="header-text">
-				<h4>Web Developer</p>
-				<h1>Hi, I'm <span>Fernalyn</span></h1>
-				<p>I am building my own resume website as my own portfolio.</p><br>
-				<p>P.S. this design is not mine and I'm practicing building websites.</p>
-			</div><!-- end header-text -->
+			<div class="logo">
+				<h1><span>F</span>ernalyn</h1>
+			</div><!-- end logo -->
+			
+			<div class="sidebar">
+				<nav>	
+					<ul>
+						<li><a href="#header">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav><!-- end nav -->
+			</div><!-- end sidebar -->
 		</div><!-- end container -->
+
+		<div class="header-text">
+			<h2>Web Developer</h2>
+			<h1>Hi, I'm <span>Fernalyn</span></h1>
+			<p>I am building my own resume website as my own portfolio.</p><br>
+			<p>P.S. this design is not mine and I'm practicing building websites.</p>
+		</div><!-- end header-text -->
 	</div><!-- end header -->
 
 	<!-- about -->
@@ -72,49 +76,49 @@
 					<div class="tab-contents active-tab" id="skills">
 						<div class="skill-container">
 							<div class="progress">
-								<h4>HTML / CSS</h4>
+								<h2>HTML / CSS</h2>
 								<div class="progress-bar">
 									<span class="percentage" data-width="80%"></span>
 								</div>
 							</div><!-- end progress -->
 							<br><br>
 							<div class="progress">
-								<h4>BOOTSTRAP</h4>
+								<h2>BOOTSTRAP</h2>
 								<div class="progress-bar">
 									<span class="percentage" data-width="30%"></span>
 								</div>
 							</div><!-- end progress -->
 							<br><br>
 							<div class="progress">
-								<h4>PHP / JAVA / JAVASCRIPT</h4>
+								<h2>PHP / JAVA / JAVASCRIPT</h2>
 								<div class="progress-bar">
 									<span class="percentage" data-width="20%"></span>
 								</div>
 							</div><!-- end progress -->
 							<br><br>
 							<div class="progress">
-								<h4>SHAREPOINT / POWERAPPS</h4>
+								<h2>SHAREPOINT / POWERAPPS</h2>
 								<div class="progress-bar">
 									<span class="percentage" data-width="50%"></span>
 								</div>
 							</div><!-- end progress -->
 							<br><br>
 							<div class="progress">
-								<h4>MYSQL / POSTGRES</h4>
+								<h2>MYSQL / POSTGRES</h2>
 								<div class="progress-bar">
 									<span class="percentage" data-width="10%"></span>
 								</div>
 							</div><!-- end progress -->
 							<br><br>
 							<div class="progress">
-								<h4>LARAVEL / VUEJS</h4>
+								<h2>LARAVEL / VUEJS</h2>
 								<div class="progress-bar">
 									<span class="percentage" data-width="5%"></span>
 								</div>
 							</div><!-- end progress -->
 							<br><br>
 							<div class="progress">
-								<h4>REACT / TYPESCRIPT</h4>
+								<h2>REACT / TYPESCRIPT</h2>
 								<div class="progress-bar">
 									<span class="percentage" data-width="5%"></span>
 								</div>
@@ -155,19 +159,19 @@
 					<i class="material-symbols-outlined">code</i>
 					<h2>Front-End</h2>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis fugit, quo, in ab voluptate possimus consequatur iste aliquid ad unde eius accusantium quae porro laudantium dicta deserunt qui magni?</p>
-					<a href="#">Learn More</a>
+					<a href="#" class="btn btn3">Learn More</a>
 				</div><!-- end service front-end -->
 				<div>
 					<i class="material-symbols-outlined">settings</i>
 					<h2>Back-End</h2>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis fugit, quo, in ab voluptate possimus consequatur iste aliquid ad unde eius accusantium quae porro laudantium dicta deserunt qui magni?</p>
-					<a href="#">Learn More</a>
+					<a href="#" class="btn btn3">Learn More</a>
 				</div><!-- end service back-end -->
 				<div>
 					<i class="material-symbols-outlined">developer_mode</i>
 					<h2>Mobile App</h2>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis fugit, quo, in ab voluptate possimus consequatur iste aliquid ad unde eius accusantium quae porro laudantium dicta deserunt qui magni?</p>
-					<a href="#">Learn More</a>
+					<a href="#" class="btn btn3">Learn More</a>
 				</div><!-- end service mobile -->
 			</div><!-- end services-list -->
 		</div><!-- end container -->
@@ -181,24 +185,24 @@
 				<div class="port">
 					<img src="images/sample-image.jpg">
 					<div class="layer">
-						<h3>Social Media</h3>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+						<h2>Social Media</h2>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit molestiae, officia expedita corporis itaque aspernatur, eos tempora nihil minima neque tempore consectetur ea voluptates maiores aut temporibus eligendi corrupti nulla?</p>
 						<a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
 					</div>
 				</div><!-- end port -->
 				<div class="port">
 					<img src="images/sample-image2.jpg">
 					<div class="layer">
-						<h3>Foods</h3>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+						<h2>Foods</h2>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit molestiae, officia expedita corporis itaque aspernatur, eos tempora nihil minima neque tempore consectetur ea voluptates maiores aut temporibus eligendi corrupti nulla?</p>
 						<a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
 					</div>
 				</div><!-- end port -->
 				<div class="port">
 					<img src="images/sample-image6.jpg">
 					<div class="layer">
-						<h3>Hiking</h3>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+						<h2>Hiking</h2>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit molestiae, officia expedita corporis itaque aspernatur, eos tempora nihil minima neque tempore consectetur ea voluptates maiores aut temporibus eligendi corrupti nulla?</p>
 						<a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
 					</div>
 				</div><!-- end port -->
@@ -218,9 +222,9 @@
 							<li><img src="images/milky.jpg"></li>
 							<li><img src="images/ash.jpg"></li>
 							<li><img src="images/bjourn.jpg"></li>
-							<li><img src="images/skye&raven.jpg"></li>
-							<li><img src="images/Fernalyn_with_cat.jpg"></li>
 							<li><img src="images/fudgee.jpg"></li>
+							<li><img src="images/Fernalyn_with_cat.jpg"></li>
+							<li><img src="images/skye&raven.jpg"></li>
 						</ul>	
 					</div><!-- end hobbies-wrap -->
 				</div><!-- end hobbies-col-1 -->
@@ -234,22 +238,22 @@
 				</div><!-- end hobbies-col-2 -->
 				
 				<div class="hobbies-col-3">
+					<div class="hobbies-wrap">
+						<ul> 
+							<!-- <li><img src="images/movies.png"></li> -->
+							<li><img src="images/manga.jpg"></li>
+							<li><img src="images/anime.avif"></li>
+							
+						</ul>	
+					</div><!-- end hobbies-wrap -->
+				</div><!-- end hobbies-col-3 -->
+
+				<div class="hobbies-col-4">
 					<h2>Movies, Manga & Anime</h2>
 					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus dolor iusto, perferendis expedita quo nesciunt voluptatem officiis ea, suscipit voluptates minus eius ab repellendus ullam soluta libero voluptatum perspiciatis sed. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet impedit, deleniti ad ut eius qui corporis saepe odio distinctio excepturi at ea autem quis repellendus sunt rem, alias exercitationem nobis.
 					<br><br>
 					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus dolor iusto, perferendis expedita quo nesciunt voluptatem officiis ea, suscipit voluptates minus eius ab repellendus ullam soluta libero voluptatum perspiciatis sed. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet impedit, deleniti ad ut eius qui corporis saepe odio distinctio excepturi at ea autem quis repellendus sunt rem, alias exercitationem nobis.
 					</p>
-				</div><!-- end hobbies-col-3 -->
-
-				<div class="hobbies-col-4">
-					<div class="hobbies-wrap">
-						<ul> 
-							<!-- <li><img src="images/movies.png"></li> -->
-							<li><img src="images/anime.avif"></li>
-							<li><img src="images/manga.jpg"></li>
-						</ul>	
-					</div><!-- end hobbies-wrap -->
-					
 				</div><!-- end hobbies-col-4 -->
 
 				<div class="hobbies-col-5">

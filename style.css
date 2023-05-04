@@ -1,6 +1,6 @@
 :root {
 	--main-color: #57ACF9;
-	--second-color: #3D7699;
+	--second-color: rgb(61, 118, 153);
 }
 
 * {
@@ -50,18 +50,27 @@ ul {
 	width: 100%;
 	height: 100vh;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/girlwithlaptop.jpg);
-
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
-.container {
+#header .container {
+	display: flex;
 	padding: 10px 10% 0 10%;
 }
 
 #header .logo {
-	width: 140px;
+	flex-basis: 40%;
+}
+
+#header .sidebar {
+    display: inline-flex;
+    flex-basis: 60%;
+    justify-content: flex-end;
+}
+
+#header .logo h1 {	
 	font-size: 60px;
 	margin: 10px 0;
 }
@@ -70,17 +79,18 @@ ul {
 	color: var(--main-color);
 }
 
-nav {
+.sidebar {
 	display: flex;
 	align-items: center;
+	align-content: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
 nav ul li {
-	display: inline-block;
+	display: inline-flex;
 	list-style: none;
-	margin: 10px 20px;
+	margin: 10px 30px;
 }
 
 nav ul li a {
@@ -105,12 +115,34 @@ nav ul li a:hover::after {
 	width: 100%;
 }
 
-nav .fa {
-	display: none;
+#header .sidebar-icon {
+    display: none;
+}
+
+.bar1 , .bar2 , .bar3{
+    width: 40px;
+    height: 3px;
+    margin: 8px 0;
+    background-color: #fff;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+
+.active .bar1{
+    transform: translate(0px , 11px)rotate(45deg);
+}
+
+.active .bar2{
+    opacity: 0;
+}
+
+.active .bar3{
+    transform: translate(0px , -11px)rotate(-45deg);
 }
 
 .header-text {
 	margin-top: 20%;
+	padding: 0 10%;
 }
 
 .header-text h1 {
@@ -121,7 +153,7 @@ nav .fa {
 	color: var(--main-color);
 }
 
-.header-text h4 {
+.header-text h2 {
 	font-size: 30px;
 	font-weight: 300;
 }
@@ -132,8 +164,12 @@ nav .fa {
 
 /* about */
 #about {
-	padding: 80px 0;
+	padding: 80px 0 0 0;
 	color: #ababab;
+}
+
+#about .container {
+	padding: 10px 10% 0 10%;
 }
 
 .row {
@@ -199,7 +235,8 @@ nav .fa {
   align-items: center;
 }
 
-.skill-container h4 {
+.skill-container h2 {
+	font-size: 17px;
 	padding-bottom: 15px;
 }
 
@@ -221,7 +258,7 @@ nav .fa {
 	width: 0;
 	height: 100%;
 	position: relative;
-	background: linear-gradient(135deg, rgb(0, 183, 255)0%, rgb(116, 216, 255)100%);
+	background: linear-gradient(135deg, rgb(0, 183, 255)0%, rgb(61, 118, 153)100%);
 	transition: all 3s ease-in-out;
 	top: 0;
 	left: 0;
@@ -247,7 +284,11 @@ nav .fa {
 
 /* .service */
 #services {
-	padding: 80px 0;
+	padding: 80px 0 0 0;
+}
+
+#services .container {
+	padding: 10px 10% 0 10%;
 }
 
 .service-list {
@@ -260,7 +301,6 @@ nav .fa {
 .service-list div {
 	background: #262626;
 	padding: 40px;
-	font-size: 13px;
 	font-weight: 300;
 	border-radius: 10px;
 	transition: background 0.5s, transform 0.5s;
@@ -275,6 +315,10 @@ nav .fa {
 	font-size: 30px;
 	font-weight: 500;
 	margin-bottom: 15px;
+}
+
+.service-list div p {
+	font-size: 14px;
 }
 
 .service-list div a {
@@ -292,7 +336,11 @@ nav .fa {
 
 /* portfolio */
 #portfolio {
-	padding: 80px 0;
+	padding: 80px 0 0 0;
+}
+
+#portfolio .container {
+	padding: 10px 10% 0 10%;
 }
 
 .port-list {
@@ -335,20 +383,25 @@ nav .fa {
 	transition: height 0.5s;
 }
 
-.layer h3 {
+.layer h2 {
+	font-size: 30px;
 	font-weight: bolder;
 	margin-bottom: 20px;
 }
 
+.layer p {
+	font-size: 17px;
+}
+
 .layer a {
-	margin-top: 20px;
+	margin-top: 30px;
 	color: var(--main-color);
 	text-decoration: none;
 	font-size: 20px;
-	line-height: 60px;
+	line-height: 50px;
 	background: #fff;
-	width: 60px;
-	height: 60px;
+	width: 50px;
+	height: 50px;
 	border-radius: 50%;
 	text-align: center;
 }
@@ -361,6 +414,7 @@ nav .fa {
 	height: 100%;
 }
 
+/* portfolio btn */
 .btn {
 	display: block;
 	margin: 50px auto;
@@ -373,9 +427,10 @@ nav .fa {
 	transition: background 0.5s;
 }
 
+/* contact btn */
 .btn.btn2 {
 	display: block;
-	margin: 50px auto;
+	margin: 20px auto 60px auto;
 	width: fit-content;
 	border: 1px solid var(--main-color);
 	padding: 14px 50px;
@@ -385,10 +440,24 @@ nav .fa {
 	transition: background 0.5s;
 }
 
+/* service btn */
+.btn.btn3 {
+	/* display: block; */
+	margin: 50px auto;
+	width: fit-content;
+	background: #ababab;
+	border: 1px solid #ababab;
+	padding: 14px 50px;
+	border-radius: 6px;
+	text-decoration: none;
+	color: #262626;
+	transition: background 0.5s;
+}
+
 .btn:hover {
-	color: #fff;
-	background-color: var(--main-color);
-	border: 1px solid var(--main-color);
+	color: #262626;
+	background-color: #ababab;
+	border: 1px solid #ababab;
 }
 
 .btn.btn2:hover {
@@ -397,10 +466,28 @@ nav .fa {
 	border: 1px solid #ababab;
 }
 
+.btn.btn3:hover {
+	color: #fff;
+	background-color: var(--second-color);
+	border: 1px solid var(--second-color)
+}
+
 /* hobby */
 #hobbies {
 	padding: 80px 0;
 	color: #ababab;
+}
+
+#hobbies .container {
+	padding: 10px 10% 0 10%;
+}
+
+#hobbies h2 {
+	font-size: 30px;
+}
+
+#hobbies p {
+	font-size: 17px;
 }
 
 /* first row */
@@ -441,33 +528,33 @@ nav .fa {
 }
 
 .hobbies-wrap ul li:nth-child(1) {
-	grid-row: span 2;
-	grid-template-columns: span 2;
+	grid-row: span 1;
+	grid-template-columns: span 1;
 }
 
 .hobbies-wrap ul li:nth-child(2) {
-	grid-row: span 2;
-	grid-template-columns: span 2;
+	grid-row: span 1;
+	grid-template-columns: span 1;
 }
 
 .hobbies-wrap ul li:nth-child(3) {
-	grid-row: span 2;
-	grid-template-columns: span 2;
+	grid-row: span 1;
+	grid-template-columns: span 1;
 }
 
 .hobbies-wrap ul li:nth-child(4) {
-	grid-row: span 2;
-	grid-template-columns: span 2;
+	grid-row: span 1;
+	grid-template-columns: span 1;
 }
 
 .hobbies-wrap ul li:nth-child(5) {
-	grid-row: span 2;
-	grid-template-columns: span 2;
+	grid-row: span 1;
+	grid-template-columns: span 1;
 }
 
 .hobbies-wrap ul li:nth-child(6) {
-	grid-row: span 2;
-	grid-template-columns: span 2;
+	grid-row: span 1;
+	grid-template-columns: span 1;
 }
 
 .hobbies-col-2 {
@@ -477,17 +564,16 @@ nav .fa {
 
 /* second row */
 .hobbies-col-3 {
-	flex-basis: 40%;
-	padding-top: 50px;
+	flex-basis: 60%;
 }
 
-.hobbies-col-4 img {
+.hobbies-col-3 img {
 	width: 100%;
 	height: auto;
 	object-fit: cover;
 }
 
-.hobbies-col-4 ul {
+.hobbies-col-3 ul {
 	display: grid;	
 	grid-template-columns: repeat(auto-fit, minmax(250px, auto));
 	grid-auto-flow: dense;
@@ -499,7 +585,8 @@ nav .fa {
 }
 
 .hobbies-col-4 {
-	flex-basis: 60%;
+	flex-basis: 40%;
+	padding-top: 50px;
 }
 
 /* third row */
@@ -531,7 +618,11 @@ nav .fa {
 
 /* contact */
 #contact {
-	padding-top: 80px;
+	padding-top: 80px
+}
+
+#contact .container {
+	padding: 10px 10% 0 10%;
 }
 
 .contact-col-1 {
@@ -594,7 +685,6 @@ form input, form textarea {
 form .btn2 {
 	padding: 14px 60px;
 	font-size: 18px;
-	margin-top: 20px;
 	cursor: pointer;
 }
 
@@ -625,12 +715,54 @@ form .btn2 {
 	}
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1600px) {
 	.layer {
-		font-size: 16px;
+		padding: 0 25px;
+	}
+}
+
+@media only screen and (max-width: 1500px) {
+	.header-text {
+		margin-top: 23%;
+	}
+
+	.layer {
 		padding: 0 20px;
 	}
 	
+	.layer h2 {
+		font-size: 25px;
+		font-weight: bolder;
+	}
+	
+	.layer p {
+		font-size: 15px;
+	}
+	
+	.layer a {
+		font-size: 19px;
+	}
+}
+
+@media only screen and (max-width: 1400px) {
+	.layer a {
+		margin-top: 20px;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	.header-text {
+		margin-top: 27%;
+	}
+
+	.layer {
+		padding: 0 15px;
+	}
+	
+	.layer p {
+		font-size: 14px;
+	}
+
 	.layer a {
 		font-size: 16px;
 		line-height: 40px;
@@ -639,25 +771,37 @@ form .btn2 {
 	}
 }
 
-@media only screen and (max-width: 1300px) {
-	.layer {
-		font-size: 14px;
-		padding: 0 10px;
-	}
-}
-
 @media only screen and (max-width: 1200px) {
-	.header-text {
-		margin-top: 30%;
-	}
+	
 }
 
 @media only screen and (max-width: 1100px) {
+	.header-text {
+		margin-top: 30%;
+	}
+
 	.layer {
-		font-size: 12px;
 		padding: 0 10px;
 	}
+
+	.layer h2 {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	
+	.layer p {
+		font-size: 13px;
+	}
+
+	.layer a {
+		font-size: 16px;
+		margin-top: 15px;
+		line-height: 40px;
+		width: 40px;
+		height: 40px;
+	}
 }
+
 
 @media only screen and (max-width: 1091px) {
 	.hobbies-col-1 ul {
@@ -666,16 +810,86 @@ form .btn2 {
 }
 
 @media only screen and (max-width: 1054px) {
+	#header .sidebar-icon {
+		display: block;
+	}
+
+	#header .sidebar-icon  {
+		z-index: 2;
+		top: 35px;
+		right: 10%;
+		width: fit-content;
+		height: auto;
+		position: absolute;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	#header .sidebar {
+		justify-content: flex-start;
+	}
+
+	.sidebar {
+		display: flex;
+		align-content: center;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		width: 300px;
+		height: 100vh;
+		top: 0;
+		background: var(--second-color);
+		position: fixed;
+		text-align: right;
+		z-index: 1;
+		opacity: 0;
+		right: -300px;
+		pointer-events: none;
+		transition: 0.3s;
+	}
+
+	nav ul {
+		padding-top: 100px;
+	}
+
+	nav ul li {
+		display: block;
+		text-align: right;
+		margin: 40px 10px;
+		display: block;
+	}
+
+	nav ul li a {
+		font-size: 25px;
+	}
+
+	.active_sidebar {
+		opacity: 1;
+		right: 0px;
+		position: fixed;
+		pointer-events: fill;
+	}
+
 	.layer {
-		font-size: 16px;
-		padding: 0 40px;
+		padding: 0 20px;
+	}
+	
+	.layer h2 {
+		font-size: 25px;
+		margin-bottom: 20px;
+	}
+	
+	.layer p {
+		font-size: 15px;
 	}
 	
 	.layer a {
+		margin-top: 30px;
 		font-size: 20px;
-		line-height: 60px;
-		width: 60px;
-		height: 60px;
+		line-height: 50px;
+		width: 50px;
+		height: 50px;
 	}
 }
 
@@ -685,64 +899,93 @@ form .btn2 {
 	}
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
 	.header-text {
 		margin-top: 35%;
 	}
+}
 
-	nav .fa {
-		display: block;
-		font-size: 30px;
+@media only screen and (max-width: 966px) {
+	.hobbies-col-1 ul {
+    	grid-template-columns: repeat(auto-fit, minmax(120px, auto));
 	}
-	
-	nav ul {
-		background: var(--second-color);
-		position: fixed;
-		top: 0;
-		right: -200px;
-		width: 200px;
-		height: 100vh;
-		padding: 50px;
-		z-index: 2;
-		transition: right 0.5s;
-	}
+}	
 
-	nav ul li {
-		display: block;
-		margin: 40px 10px;
+@media only screen and (max-width: 904px) {
+	.hobbies-col-1 ul {
+    	grid-template-columns: repeat(auto-fit, minmax(110px, auto));
 	}
+}
 
-	nav ul li a {
-		font-size: 20px;
-	}
-
-	nav ul .fa {
-		position: absolute;
-		top: 25px;
-		left: 25px;
-		cursor: pointer;
+@media only screen and (max-width: 900px) {
+	.header-text {
+		margin-top: 40%;
 	}
 
 	.layer {
-		font-size: 14px;
 		padding: 0 20px;
 	}
 	
+	.layer h2 {
+		font-size: 25px;
+		margin-bottom: 15px;
+	}
+	
+	.layer p {
+		font-size: 15px;
+	}
+	
 	.layer a {
-		font-size: 18px;
-		line-height: 50px;
-		width: 50px;
-		height: 50px;
+		margin-top: 20px;
+		font-size: 16px;
+		line-height: 40px;
+		width: 40px;
+		height: 40px;
+	}
+
+	.contact-col-2 {
+		flex-basis: 55%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.header-text {
+		margin-top: 45%;
+	}
+
+	.layer {
+		padding: 0 10px;
+	}
+
+	.layer h2 {
+		font-size: 20px;
+		margin-bottom: 5px;
+	}
+	
+	.layer p {
+		font-size: 13px;
+	}
+
+	.layer a {
+		font-size: 16px;
+		line-height: 40px;
+		width: 40px;
+		height: 40px;
 	}
 }
 
 @media only screen and (max-width: 768px) {
-	#header .logo {
+	#header .sidebar-icon {
+		z-index: 2;
+		top: 30px;
+	}
+
+	#header .logo h1 {
 		font-size: 50px;
 	}
 
 	.header-text {
-		margin-top: 43%;
+		margin-top: 50%;
 	}
 
 	.header-text h1 {
@@ -754,23 +997,10 @@ form .btn2 {
 	}
 
 	.about-col-1 img {
-		width: 60%;
+		width: 50%;
 		height: 100%;
 	}
-
-	.layer {
-		font-size: 12px;
-		padding: 0 20px;
-		
-	}
 	
-	.layer a {
-		font-size: 18px;
-		line-height: 40px;
-		width: 40px;
-		height: 40px;
-	}
-
 	.about-col-1, .about-col-2 {
 		flex-basis: 100%;
 	}
@@ -779,8 +1009,100 @@ form .btn2 {
 		margin-bottom: 30px;
 	}
 
+	.layer {
+		font-size: 12px;
+		padding: 0 20px;
+	}
+	
+	.layer a {
+		font-size: 18px;
+		line-height: 40px;
+		width: 40px;
+		height: 40px;
+	}
+
 	.contact-col-1, .contact-col-2 {
 		flex-basis: 100%;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.header-text {
+		margin-top: 53%;
+	}
+
+	.layer {
+		padding: 0 10px;
+	}
+	
+	.layer h2 {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	
+	.layer p {
+		font-size: 11px;
+	}
+	
+	.layer a {
+		margin-top: 15px;
+		font-size: 16px;
+		line-height: 35px;
+		width: 35px;
+		height: 35px;
+	}
+}
+
+@media only screen and (max-width: 691px) {
+	.layer {
+		padding: 0 40px;
+	}
+	
+	.layer h2 {
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+	
+	.layer p {
+		font-size: 17px;
+	}
+	
+	.layer a {
+		margin-top: 30px;
+		font-size: 20px;
+		line-height: 50px;
+		width: 50px;
+		height: 50px;
+	}
+}
+
+@media only screen and (max-width: 691px) {
+	.hobbies-wrap {
+		padding: 50px 0px 50px 0px;
+	}
+
+	.hobbies-col-1, .hobbies-col-2 {
+		flex-basis: 100%;
+	}
+
+	.hobbies-col-3, .hobbies-col-4 {
+		flex-basis: 100%;
+	}
+
+	.hobbies-col-5, .hobbies-col-6 {
+		flex-basis: 100%;
+	}
+
+	.hobbies-col-2 {
+		padding-top: 0px;
+	}
+
+	.hobbies-col-4 {
+		padding-top: 0px;
+	}
+
+	.hobbies-col-6 {
+		padding-top: 0px;
 	}
 }
 
@@ -789,98 +1111,199 @@ form .btn2 {
 		margin-top: 60%;
 	}
 
-	.header-text h4 {
-		font-size: 25px;
-	}
-
-	.header-text h1 {
-		font-size: 55px;
-	}
-
-	.sub-title {
-		font-size: 40px;
-	}
-
-	.about-col-2 {
-		font-size: 14px;
-	}
-
-	.tab-links {
-		font-size: 18px;
-		margin-right: 20px;
+	.about-col-1 img {
+		width: 60%;
+		height: 100%;
 	}
 }
 
-@media only screen and (max-width: 691px) {
+@media only screen and (max-width: 500px) {
+	.header-text {
+		margin-top: 55%;
+	}
+
+	.about-col-1 img {
+		width: 70%;
+		height: 100%;
+	}
+
 	.layer {
-		font-size: 20px;
-		padding: 0 40px;
+		padding: 0 20px;
+	}
+
+	.layer h2 {
+		font-size: 25px;
+		margin-bottom: 20px;
+	}
+	
+	.layer p {
+		font-size: 15px;
 	}
 	
 	.layer a {
-		font-size: 16px;
-		line-height: 60px;
-		width: 60px;
-		height: 60px;
+		margin-top: 30px;
+		font-size: 19px;
+		line-height: 50px;
+		width: 50px;
+		height: 50px;
 	}
 }
 
 @media only screen and (max-width: 480px) {
-	.header-text {
-		margin-top: 65%;
+	.sidebar {
+		width: 250px;
 	}
 
-	#header .logo {
-		font-size: 30px;
-	}
-
-	.header-text h4 {
-		font-size: 23px;
-	}
-	
-	.header-text h1 {
+	.sub-title {
 		font-size: 50px;
+	}
+
+	.about-col-1 img {
+		width: 75%;
+		height: 100%;
 	}
 }
 
 @media only screen and (max-width: 400px) {
-	.header-text {
-		margin-top: 75%;
+	.sidebar {
+		width: 200px;
 	}
 
-	.header-text h4 {
+	.header-text {
+		margin-top: 65%;
+	}
+
+	.about-col-2 {
+		font-size: 15px;
+	}
+
+	.skill-container h2 {
+		font-size: 15px;
+	}
+
+	.tab-links {	
+		margin-right: 20px;
+	}
+
+	.layer {
+		padding: 0 15px;
+	}
+
+	.layer h2 {
 		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	
+	.layer p {
+		font-size: 13px;
+	}
+	
+	.layer a {
+		margin-top: 20px;
+		font-size: 19px;
+		line-height: 50px;
+		width: 50px;
+		height: 50px;
+	}
+
+	#hobbies h2 {
+		font-size: 25px;
+	}
+
+	#hobbies p {
+		font-size: 15px;
+	}
+
+	.footer p {
+		font-size: 15px;
 	}
 }
 
 @media only screen and (max-width: 320px) {
+	.sidebar {
+		width: 150px;
+	}
+
+	#header .sidebar-icon {
+		z-index: 2;
+		top: 20px;
+	}
+
+	.bar1, .bar2, .bar3 {
+		width: 30px;
+		height: 3px;
+		margin: 8px 0;
+		background-color: #fff;
+		border-radius: 50px;
+		transition: 0.2s;
+	}
+
+	nav ul li a {
+		font-size: 20px;
+	}
+	
+	.sub-title {
+		font-size: 40px;
+	}
+
 	.header-text {
-		margin-top: 80%;
-		
+		margin-top: 105%;
+	}
+
+	#header .logo h1 {
+		font-size: 35px;
+	}
+
+	#header h1 {
+		font-size: 50px;
+	}
+
+	#header h2 {
+		font-size: 25px;
 	}
 
 	#header p {
-		font-size: 15px;
+		font-size: 13px;
 	}
 
 	.about-col-2 {
-		font-size: 14px;
+		font-size: 13px;
 	}
 
 	.tab-links {
 		font-size: 16px;
 	}
 
+	.skill-container h2 {
+		font-size: 13px;
+	}
+
+	.skill-container .progress-bar {
+		width: 95%;
+	}
+
+	.service-list div {
+		padding: 40px 25px;
+	}
+
 	.layer {
-		font-size: 14px;
-		padding: 0 20px;
-		
+		padding: 0 10px;
+	}
+
+	.layer h2 {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	
+	.layer p {
+		font-size: 12px;
 	}
 	
 	.layer a {
-		font-size: 18px;
-		line-height: 40px;
-		width: 40px;
-		height: 40px;
+		margin-top: 10px;
+		font-size: 16px;
+		line-height: 30px;
+		width: 30px;
+		height: 30px;
 	}
 }

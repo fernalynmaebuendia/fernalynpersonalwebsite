@@ -1,4 +1,4 @@
-To reload page and back to top of the page
+// To reload page and back to top of the page
 window.addEventListener('beforeunload', function() {
 	window.scrollTo({
 	  top:0,

@@ -1,10 +1,10 @@
 // To reload page and back to top of the page
-window.addEventListener('beforeunload', function() {
-	window.scrollTo({
-	  top:0,
-		behavior: "smooth"
-	})
-});
+// window.addEventListener('beforeunload', function() {
+// 	window.scrollTo({
+// 	  top:0,
+// 		behavior: "smooth"
+// 	})
+// });
 
 // Scroll Up button functionality module
 function handleScrollUpButton() {
@@ -44,7 +44,7 @@ function handleSidebar() {
       sidebar.classList.remove("active_sidebar");
     });
   });
-
+  // Open sidebar
   function toggleSidebar() {
     sidebarIcon.classList.toggle("active");
     sidebar.classList.toggle("active_sidebar");
@@ -82,31 +82,22 @@ function handleProgressBar() {
   window.addEventListener("scroll", onScrollProgressBar);
 }
 
-// Tab navigation click hover effects module
-function handleTabNavigation() {
-  const tablinks = document.getElementsByClassName("tab-links");
-  const tabcontents = document.getElementsByClassName("tab-contents");
-  
-  function opentab(tabname) {
-    for (let i = 0; i < tablinks.length; i++) {
-      tablinks[i].classList.remove("active-link");
-    }
-    for (let i = 0; i < tabcontents.length; i++) {
-      tabcontents[i].classList.remove("active-tab");
-    }
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
-  }
-  // Attach click event listeners to tab links
-  for (let i = 0; i < tablinks.length; i++) {
-    tablinks[i].addEventListener("click", function() {
-      opentab(this.dataset.tab);
-    });
-  }
+// Tab navigation click hover effects
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function openTab(tabname, event) {
+	for (tablink of tablinks) {
+		tablink.classList.remove("active-link");
+	}
+	for (tabcontent of tabcontents) {
+		tabcontent.classList.remove("active-tab");
+	}
+	event.currentTarget.classList.add("active-link");
+	document.getElementById(tabname).classList.add("active-tab");
 }
 
 // Call the modularized functions
 handleScrollUpButton();
 handleSidebar();
 handleProgressBar();
-handleTabNavigation();

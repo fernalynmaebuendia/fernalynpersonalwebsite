@@ -31,10 +31,18 @@
 					<ul>
 						<li><a href="#header">Home</a></li>
 						<li><a href="#about">About</a></li>
+						<li><a href="#services">Services</a></li>
 						<li><a href="#portfolio">Portfolio</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</nav><!-- end nav -->
+				
+				<div class="social-icons social-navbar">
+					<a href="https://www.facebook.com/fernalynmaebuendia24/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="https://twitter.com/BuendiaFernalyn"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="https://www.instagram.com/fernalynmaebuendia/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					<a href="https://github.com/fernalynmaebuendia/"><i class="fa fa-github" aria-hidden="true"></i></a>
+				</div>
 			</div><!-- end sidebar -->
 		</div><!-- end container -->
 
@@ -68,10 +76,10 @@
 					I don’t have much experience in the IT field, but I am willing to train, to learn, to improve my skills, and to explore. I am seeking a challenging career that provides an opportunity to improve my skills & abilities. I am willing to be trained, to learn, to improve, and to explore.</p>
 
 					<div class="tab-titles">
-						<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-						<p class="tab-links" onclick="opentab('experience')">Experience</p>
-						<p class="tab-links" onclick="opentab('education')">Education</p>
-					</div><!-- end tab-titles -->
+						<p class="tab-links active-link" onclick="openTab('skills', event)">Skills</p>
+						<p class="tab-links" onclick="openTab('experience', event)">Experience</p>
+						<p class="tab-links" onclick="openTab('education', event)">Education</p>
+					  </div><!-- end tab-titles -->
 
 					<div class="tab-contents active-tab" id="skills">
 						<div class="skill-container">
@@ -150,67 +158,6 @@
 		</div> <!-- end container -->
 	</div><!-- end about -->
 
-	<!-- services -->
-	<div id="services">
-		<div class="container">
-			<h1 class="sub-title">Services</h1>
-			<div class="service-list">
-				<div>
-					<i class="material-symbols-outlined">code</i>
-					<h2>Front-End</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis fugit, quo, in ab voluptate possimus consequatur iste aliquid ad unde eius accusantium quae porro laudantium dicta deserunt qui magni?</p>
-					<a href="" class="btn btn3">Learn More</a>
-				</div><!-- end service front-end -->
-				<div>
-					<i class="material-symbols-outlined">settings</i>
-					<h2>Back-End</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis fugit, quo, in ab voluptate possimus consequatur iste aliquid ad unde eius accusantium quae porro laudantium dicta deserunt qui magni?</p>
-					<a href="" class="btn btn3">Learn More</a>
-				</div><!-- end service back-end -->
-				<div>
-					<i class="material-symbols-outlined">developer_mode</i>
-					<h2>Mobile App</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis fugit, quo, in ab voluptate possimus consequatur iste aliquid ad unde eius accusantium quae porro laudantium dicta deserunt qui magni?</p>
-					<a href="" class="btn btn3">Learn More</a>
-				</div><!-- end service mobile -->
-			</div><!-- end services-list -->
-		</div><!-- end container -->
-	</div><!-- end services -->
-
-	<!-- portfolio -->
-	<div id="portfolio">
-		<div class="container">
-			<h1 class="sub-title">Portfolio</h1>
-			<div class="port-list">
-				<div class="port">
-					<img src="images/sample-image.jpg">
-					<div class="layer">
-						<h2>Social Media</h2>
-						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit molestiae, officia expedita corporis itaque aspernatur, eos tempora nihil minima neque tempore consectetur ea voluptates maiores aut temporibus eligendi corrupti nulla?</p>
-						<a href=""><i class="fa fa-external-link" aria-hidden="true"></i></a>
-					</div>
-				</div><!-- end port -->
-				<div class="port">
-					<img src="images/sample-image2.jpg">
-					<div class="layer">
-						<h2>Foods</h2>
-						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit molestiae, officia expedita corporis itaque aspernatur, eos tempora nihil minima neque tempore consectetur ea voluptates maiores aut temporibus eligendi corrupti nulla?</p>
-						<a href=""><i class="fa fa-external-link" aria-hidden="true"></i></a>
-					</div>
-				</div><!-- end port -->
-				<div class="port">
-					<img src="images/sample-image6.jpg">
-					<div class="layer">
-						<h2>Hiking</h2>
-						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit molestiae, officia expedita corporis itaque aspernatur, eos tempora nihil minima neque tempore consectetur ea voluptates maiores aut temporibus eligendi corrupti nulla?</p>
-						<a href=""><i class="fa fa-external-link" aria-hidden="true"></i></a>
-					</div>
-				</div><!-- end port -->
-			</div><!-- end port-list -->
-			<a href="#" class="btn">See more</a><!-- see more button -->
-		</div><!-- end container -->
-	</div><!-- end portfolio -->
-
 	<!-- hobbies -->
 	<div id="hobbies">
 		<div class="container">
@@ -231,10 +178,7 @@
 
 				<div class="hobbies-col-2">
 					<h2>Cats and Dogs</h2>
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus dolor iusto, perferendis expedita quo nesciunt voluptatem officiis ea, suscipit voluptates minus eius ab repellendus ullam soluta libero voluptatum perspiciatis sed. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet impedit, deleniti ad ut eius qui corporis saepe odio distinctio excepturi at ea autem quis repellendus sunt rem, alias exercitationem nobis.
-					<br><br>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus dolor iusto, perferendis expedita quo nesciunt voluptatem officiis ea, suscipit voluptates minus eius ab repellendus ullam soluta libero voluptatum perspiciatis sed. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet impedit, deleniti ad ut eius qui corporis saepe odio distinctio excepturi at ea autem quis repellendus sunt rem, alias exercitationem nobis.
-					</p>
+					<p>Hi! This is my pets. Meet my cats Milky (black & white), Ash (gray), and Fudgee (small one with brownish black). Actually Fudgee is already died few months ago. <br><br> Meet my dogs Skye (white) and Raven (grayish). Actually Raven is black when she was born but when she grow older her furr became change (grayish) and she's pregnant right now.<br><br> Lastly, beside Ash is Bjourn. He's my girlfriend's dog, sadly he already past few months ago too. The one that I was holding is not my cat tho, she's someone else cat HAHAHA.</p> 
 				</div><!-- end hobbies-col-2 -->
 				
 				<div class="hobbies-col-3">
@@ -250,10 +194,7 @@
 
 				<div class="hobbies-col-4">
 					<h2>Movies, Manga & Anime</h2>
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus dolor iusto, perferendis expedita quo nesciunt voluptatem officiis ea, suscipit voluptates minus eius ab repellendus ullam soluta libero voluptatum perspiciatis sed. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet impedit, deleniti ad ut eius qui corporis saepe odio distinctio excepturi at ea autem quis repellendus sunt rem, alias exercitationem nobis.
-					<br><br>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus dolor iusto, perferendis expedita quo nesciunt voluptatem officiis ea, suscipit voluptates minus eius ab repellendus ullam soluta libero voluptatum perspiciatis sed. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet impedit, deleniti ad ut eius qui corporis saepe odio distinctio excepturi at ea autem quis repellendus sunt rem, alias exercitationem nobis.
-					</p>
+					<p>I love watching movies and anime. I prefer stay at home than go outside hehe. Sometimes I read manga too but it depends.</p>
 				</div><!-- end hobbies-col-4 -->
 
 				<div class="hobbies-col-5">
@@ -267,14 +208,72 @@
 
 				<div class="hobbies-col-6">
 					<h2>Food</h2>
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus dolor iusto, perferendis expedita quo nesciunt voluptatem officiis ea, suscipit voluptates minus eius ab repellendus ullam soluta libero voluptatum perspiciatis sed. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet impedit, deleniti ad ut eius qui corporis saepe odio distinctio excepturi at ea autem quis repellendus sunt rem, alias exercitationem nobis.
-					<br><br>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus dolor iusto, perferendis expedita quo nesciunt voluptatem officiis ea, suscipit voluptates minus eius ab repellendus ullam soluta libero voluptatum perspiciatis sed. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet impedit, deleniti ad ut eius qui corporis saepe odio distinctio excepturi at ea autem quis repellendus sunt rem, alias exercitationem nobis.
-					</p>
+					<p>Of course, I love food, except Ampalaya (Bitter Gourd) HAHAHAHA.</p>
 				</div><!-- end hobbies-col-2 -->
 			</div><!-- end row -->
 		</div><!-- end container -->
 	</div><!-- end hobbies -->
+
+	<!-- services -->
+	<div id="services">
+		<div class="container">
+			<h1 class="sub-title">Services</h1>
+			<div class="service-list">
+				<div>
+					<i class="material-symbols-outlined">code</i>
+					<h2>Front-End</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis fugit, quo, in ab voluptate possimus consequatur iste aliquid ad unde eius accusantium quae porro laudantium dicta deserunt qui magni?</p>
+					<a href="services.html" class="btn btn3">Learn More</a>
+				</div><!-- end service front-end -->
+				<div>
+					<i class="material-symbols-outlined">settings</i>
+					<h2>Back-End</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis fugit, quo, in ab voluptate possimus consequatur iste aliquid ad unde eius accusantium quae porro laudantium dicta deserunt qui magni?</p>
+					<a href="services.html" class="btn btn3">Learn More</a>
+				</div><!-- end service back-end -->
+				<div>
+					<i class="material-symbols-outlined">developer_mode</i>
+					<h2>Mobile App</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis fugit, quo, in ab voluptate possimus consequatur iste aliquid ad unde eius accusantium quae porro laudantium dicta deserunt qui magni?</p>
+					<a href="services.html" class="btn btn3">Learn More</a>
+				</div><!-- end service mobile -->
+			</div><!-- end services-list -->
+		</div><!-- end container -->
+	</div><!-- end services -->
+
+	<!-- portfolio -->
+	<div id="portfolio">
+		<div class="container">
+			<h1 class="sub-title">Portfolio</h1>
+			<div class="port-list">
+				<div class="port">
+					<img src="images/sample-image.jpg">
+					<div class="layer">
+						<h2>Social Media</h2>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit molestiae, officia expedita...</p>
+						<a href="site.html"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+					</div>
+				</div><!-- end port -->
+				<div class="port">
+					<img src="images/sample-image2.jpg">
+					<div class="layer">
+						<h2>Foods</h2>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit molestiae, officia expedita...</p>
+						<a href="site.html"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+					</div>
+				</div><!-- end port -->
+				<div class="port">
+					<img src="images/sample-image6.jpg">
+					<div class="layer">
+						<h2>Hiking</h2>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit molestiae, officia expedita...</p>
+						<a href="site.html"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+					</div>
+				</div><!-- end port -->
+			</div><!-- end port-list -->
+			<a href="portfolio.html" class="btn">See more</a><!-- see more button -->
+		</div><!-- end container -->
+	</div><!-- end portfolio -->
 
 	<!-- contact -->
 	<div id="contact">
@@ -286,10 +285,10 @@
 					<p><i class="fa fa-envelope" style="margin-right: 10px;" aria-hidden="true"></i> fernalynbuendia24@gmail.com</p>
 					<p><i class="fa fa-phone-square" style="margin-right: 14px;" aria-hidden="true"></i>09485066578</p>
 					<div class="social-icons">
-						<a href="https://www.facebook.com/pangit.taba.7/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+						<a href="https://www.facebook.com/fernalynmaebuendia24/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="https://twitter.com/BuendiaFernalyn"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="https://www.instagram.com/fernalynmaebuendia/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<a href="https://github.com/fernalynmaebuendia/"><i class="fa fa-github" aria-hidden="true"></i></a>
 					</div>
 					<a href="images/Fernalyn Mae Buendia - B (1).pdf" download class="btn btn2">Download CV</a>
 				</div><!-- end contact-col-1 -->

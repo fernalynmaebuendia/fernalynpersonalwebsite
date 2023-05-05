@@ -1297,8 +1297,6 @@ form .btn2 {
 	}
 
 	#about .row {
-		display: flex;
-		flex-direction: column;
 		justify-content: center;
 		flex-wrap: nowrap;
 	}

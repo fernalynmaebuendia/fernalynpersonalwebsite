@@ -776,45 +776,7 @@ form .btn2 {
 	}
 }
 
-@media only screen and (max-width: 1200px) {
-	
-}
-
-@media only screen and (max-width: 1100px) {
-	.header-text {
-		margin-top: 30%;
-	}
-
-	.layer {
-		padding: 0 10px;
-	}
-
-	.layer h2 {
-		font-size: 20px;
-		margin-bottom: 10px;
-	}
-	
-	.layer p {
-		font-size: 13px;
-	}
-
-	.layer a {
-		font-size: 16px;
-		margin-top: 15px;
-		line-height: 40px;
-		width: 40px;
-		height: 40px;
-	}
-}
-
-
-@media only screen and (max-width: 1091px) {
-	.hobbies-col-1 ul {
-		grid-template-columns: repeat(auto-fit, minmax(140px, auto));
-	}
-}
-
-@media only screen and (max-width: 1054px) {
+@media only screen and (max-width: 1280px) {
 	#header .sidebar-icon {
 		display: block;
 	}
@@ -889,7 +851,43 @@ form .btn2 {
 	.social-navbar a:hover {
 		color: #fff;
 	}
+}
 
+@media only screen and (max-width: 1100px) {
+	.header-text {
+		margin-top: 30%;
+	}
+
+	.layer {
+		padding: 0 10px;
+	}
+
+	.layer h2 {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	
+	.layer p {
+		font-size: 13px;
+	}
+
+	.layer a {
+		font-size: 16px;
+		margin-top: 15px;
+		line-height: 40px;
+		width: 40px;
+		height: 40px;
+	}
+}
+
+
+@media only screen and (max-width: 1091px) {
+	.hobbies-col-1 ul {
+		grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+	}
+}
+
+@media only screen and (max-width: 1054px) {
 	.layer {
 		padding: 0 20px;
 	}
@@ -1177,14 +1175,27 @@ form .btn2 {
 		z-index: 2;
 		top: 25px;
 	}
-
+	
 	.sub-title {
 		font-size: 50px;
+	}
+
+	.about-col-2 {
+		font-size: 15px;
+	}
+
+	.skill-container h2 {
+		font-size: 15px;
 	}
 
 	.about-col-1 img {
 		width: 75%;
 		height: 100%;
+	}
+
+	.tab-links {	
+		font-size: 16;
+		margin-right: 20px;
 	}
 }
 
@@ -1200,15 +1211,15 @@ form .btn2 {
 	}
 
 	.about-col-2 {
-		font-size: 15px;
+		font-size: 13px;
 	}
 
 	.skill-container h2 {
-		font-size: 15px;
+		font-size: 13px;
 	}
 
 	.tab-links {	
-		margin-right: 20px;
+		margin-right: 15px;
 	}
 
 	.layer {
@@ -1279,30 +1290,39 @@ form .btn2 {
 		font-size: 13px;
 	}
 
-	.about-col-2 {
-		font-size: 13px;
+	.row {		
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
 	}
 
-	.tab-links {
-		font-size: 16px;
-		margin-right: 15px;
+	.about-col-2 {
+		font-size: 13px;
 	}
 
 	.skill-container h2 {
 		font-size: 13px;
 	}
 
+	.tab-links {
+		font-size: 15px;	
+		margin-right: 10px;
+	}
+
 	.skill-container .progress-bar {
 		width: 97%;
 	}
 
-	#about .row {
+	.service-list {
 		justify-content: center;
-		flex-wrap: nowrap;
 	}
 
 	.service-list div {
 		padding: 40px 25px;
+	}
+
+	.port-list {
+		justify-content: center;
 	}
 
 	.layer {

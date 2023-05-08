@@ -1,3 +1,10 @@
+:root {
+	--main-color: #64b7ea;
+	--second-color: rgb(61, 118, 153);
+	--third-color: #4280A6;
+	--fourth-color: #244559;
+}
+
 /* services main page */
 #site-header {
 	width: 100%;
@@ -134,18 +141,6 @@ ul.breadcrumb li+li:before {
 	font-size: 17px;
 }
 
-@media only screen and (max-width: 1500px) {
-	/* #site-header .site-header-text {
-		margin-top: 23%;
-	} */
-}
-
-@media only screen and (max-width: 1300px) {
-	/* #site-header .site-header-text {
-		margin-top: 27%;
-	} */
-}
-
 @media only screen and (max-width: 1280px) {
 	#site-header .sidebar-icon {
 		display: block;
@@ -221,30 +216,41 @@ ul.breadcrumb li+li:before {
 	#site-header .social-navbar a:hover {
 		color: #fff;
 	}
-}
 
-@media only screen and (max-width: 1100px) {
-	/* #site-header .site-header-text {
-		margin-top: 30%;
-	} */
+    ul.breadcrumb {
+        padding: 0;
+        list-style: none;
+        background-color: var(--second-color);
+    }
+    
+    ul.breadcrumb li {
+        display: inline-flex;
+        font-size: 18px;
+    }
+    
+    ul.breadcrumb li+li:before {
+        color: #fff;
+        content: "";
+        padding-right: 0;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
-	/* #site-header .site-header-text {
-		margin-top: 35%;
-	} */
+	#site-header .site-header-text {
+		margin-top: 5%;
+	}
 }
 
 @media only screen and (max-width: 900px) {
-	/* #site-header .site-header-text {
-		margin-top: 40%;
-	} */
+	#site-header .site-header-text {
+		margin-top: 6%;
+	}
 }
 
 @media only screen and (max-width: 800px) {
-	/* #site-header .site-header-text {
-		margin-top: 45%;
-	} */
+	#site-header .site-header-text {
+		margin-top: 8%;
+	}
 }
 
 @media only screen and (max-width: 768px) {
@@ -256,32 +262,28 @@ ul.breadcrumb li+li:before {
 	#site-header .logo h1 {
 		font-size: 50px;
 	}
-
-	#site-header .site-header-text {
-		margin-top: 50%;
-	}
-
-	#site-header .site-header-text h1 {
-		font-size: 60px;
-	}
 }
 
 @media only screen and (max-width: 700px) {
-	/* #site-header .site-header-text {
-		margin-top: 53%;
-	} */
+	#site-header .site-header-text {
+		margin-top: 10%;
+	}
 }
 
 @media only screen and (max-width: 600px) {
-	/* #site-header .site-header-text {
-		margin-top: 60%;
-	} */
+	#site-header .site-header-text {
+		margin-top: 13%;
+	}
+
+	#site-header .site-header-text h1 {
+		font-size: 55px;
+	}
 }
 
 @media only screen and (max-width: 500px) {
-	/* #site-header .site-header-text {
-		margin-top: 55%;
-	} */
+	#site-header .site-header-text {
+		margin-top: 15%;
+	}
 }
 
 @media only screen and (max-width: 480px) {
@@ -296,15 +298,19 @@ ul.breadcrumb li+li:before {
 }
 
 @media only screen and (max-width: 400px) {
-	/* #site-header .site-header-text {
-		margin-top: 65%;
-	} */
+	#site-header .site-header-text {
+		margin-top: 15%;
+	}
 }
 
 @media only screen and (max-width: 320px) {
 	#site-header .sidebar-icon {
 		z-index: 2;
 		top: 20px;
+	}
+
+    #site-header .site-header-text {
+		margin-top: 20%;
 	}
 
 	#site-header nav ul li a {
@@ -315,23 +321,11 @@ ul.breadcrumb li+li:before {
 		font-size: 40px;
 	}
 
-	#site-header .site-header-text {
-		margin-top: 105%;
-	}
-
 	#site-header .logo h1 {
 		font-size: 35px;
 	}
 
-	#site-header h1 {
+    #site-header .site-header-text h1 {
 		font-size: 50px;
-	}
-
-	#site-header h2 {
-		font-size: 25px;
-	}
-
-	#site-header p {
-		font-size: 13px;
 	}
 }

@@ -1,3 +1,10 @@
+:root {
+	--main-color: #64b7ea;
+	--second-color: rgb(61, 118, 153);
+	--third-color: #4280A6;
+	--fourth-color: #244559;
+}
+
 /* services main page */
 #service-header {
 	width: 100%;
@@ -134,9 +141,9 @@ ul.breadcrumb li+li:before {
 	font-size: 17px;
 }
 
-/* frontend */
+/* frontend backend mobile */
 .frontend-service-content {
-	padding: 80px 0;
+	padding: 80px 0 0 0;
 	color: #ababab;
 }
 
@@ -163,16 +170,64 @@ ul.breadcrumb li+li:before {
     padding: 20px 10%;
 }
 
+@media only screen and (max-width: 1800px) {
+	#service-header .service-header-text {
+		margin-top: 6%;
+	}
+
+	.frontend-service-list img {
+		width: 53%;
+		height: 100%;
+		border-radius: 10px;
+	}
+}
+
+@media only screen and (max-width: 1700px) {
+	.frontend-service-list img {
+		width: 56%;
+		height: 100%;
+		border-radius: 10px;
+	}
+}
+
+@media only screen and (max-width: 1600px) {
+	#service-header .service-header-text {
+		margin-top: 7%;
+	}
+
+	.frontend-service-list img {
+		width: 59%;
+		height: 100%;
+		border-radius: 10px;
+	}
+}
+
 @media only screen and (max-width: 1500px) {
-	/* #service-header .service-header-text {
-		margin-top: 23%;
-	} */
+	.frontend-service-list img {
+		width: 62%;
+		height: 100%;
+		border-radius: 10px;
+	}
+}
+
+@media only screen and (max-width: 1400px) {
+	#service-header .service-header-text {
+		margin-top: 8%;
+	}
+
+	.frontend-service-list img {
+		width: 65%;
+		height: 100%;
+		border-radius: 10px;
+	}
 }
 
 @media only screen and (max-width: 1300px) {
-	/* #service-header .service-header-text {
-		margin-top: 27%;
-	} */
+	.frontend-service-list img {
+		width: 68%;
+		height: 100%;
+		border-radius: 10px;
+	}
 }
 
 @media only screen and (max-width: 1280px) {
@@ -250,30 +305,79 @@ ul.breadcrumb li+li:before {
 	#service-header .social-navbar a:hover {
 		color: #fff;
 	}
+
+    ul.breadcrumb {
+        padding: 0;
+        list-style: none;
+        background-color: var(--second-color);
+    }
+    
+    ul.breadcrumb li {
+        display: inline-flex;
+        font-size: 18px;
+    }
+    
+    ul.breadcrumb li+li:before {
+        color: #fff;
+        content: "";
+        padding-right: 0;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+	#service-header .service-header-text {
+		margin-top: 9%;
+	}
+
+	.frontend-service-list img {
+		width: 71%;
+		height: 100%;
+		border-radius: 10px;
+	}
 }
 
 @media only screen and (max-width: 1100px) {
-	/* #service-header .service-header-text {
-		margin-top: 30%;
-	} */
+	.frontend-service-list img {
+		width: 74%;
+		height: 100%;
+		border-radius: 10px;
+	}
 }
 
 @media only screen and (max-width: 1000px) {
-	/* #service-header .service-header-text {
-		margin-top: 35%;
-	} */
+	#service-header .service-header-text {
+		margin-top: 10%;
+	}
+
+	.frontend-service-list img {
+		width: 77%;
+		height: 100%;
+		border-radius: 10px;
+	}
 }
 
 @media only screen and (max-width: 900px) {
-	/* #service-header .service-header-text {
-		margin-top: 40%;
-	} */
+	#service-header .service-header-text {
+		margin-top: 11%;
+	}
+
+	.frontend-service-list img {
+		width: 80%;
+		height: 100%;
+		border-radius: 10px;
+	}
 }
 
 @media only screen and (max-width: 800px) {
-	/* #service-header .service-header-text {
-		margin-top: 45%;
-	} */
+	#service-header .service-header-text {
+		margin-top: 12%;
+	}
+
+	.frontend-service-list img {
+		width: 83%;
+		height: 100%;
+		border-radius: 10px;
+	}
 }
 
 @media only screen and (max-width: 768px) {
@@ -285,37 +389,59 @@ ul.breadcrumb li+li:before {
 	#service-header .logo h1 {
 		font-size: 50px;
 	}
-
-	#service-header .service-header-text {
-		margin-top: 50%;
-	}
-
-	#service-header .service-header-text h1 {
-		font-size: 60px;
-	}
 }
 
 @media only screen and (max-width: 700px) {
-	/* #service-header .service-header-text {
-		margin-top: 53%;
-	} */
+	#service-header .service-header-text {
+		margin-top: 13%;
+	}
+
+	.frontend-service-list img {
+		width: 86%;
+		height: 100%;
+		border-radius: 10px;
+	}
 }
 
 @media only screen and (max-width: 600px) {
-	/* #service-header .service-header-text {
-		margin-top: 60%;
-	} */
+	#service-header .service-header-text {
+		margin-top: 18%;
+	}
+
+	.frontend-service-list {
+		padding: 40px 20px;
+	}
+
+	.frontend-service-list img {
+		width: 89%;
+		height: 100%;
+		border-radius: 10px;
+	}
 }
 
 @media only screen and (max-width: 500px) {
-	/* #service-header .service-header-text {
-		margin-top: 55%;
-	} */
+	#service-header .service-header-text {
+		margin-top: 20%;
+	}
+
+	.frontend-service-list img {
+		width: 92%;
+		height: 100%;
+		border-radius: 10px;
+	}
+
+	.frontend-service-list p {
+		padding: 20px 5%;
+	}
 }
 
 @media only screen and (max-width: 480px) {
 	#service-header .logo h1 {
 		font-size: 40px;
+	}
+
+    #service-header .service-header-text h1 {
+		font-size: 55px;
 	}
 
 	#service-header .sidebar-icon {
@@ -325,15 +451,25 @@ ul.breadcrumb li+li:before {
 }
 
 @media only screen and (max-width: 400px) {
-	/* #service-header .service-header-text {
-		margin-top: 65%;
-	} */
+	#service-header .service-header-text {
+		margin-top: 28%;
+	}
+
+	.frontend-service-list img {
+		width: 95%;
+		height: 100%;
+		border-radius: 10px;
+	}
 }
 
 @media only screen and (max-width: 320px) {
 	#service-header .sidebar-icon {
 		z-index: 2;
 		top: 20px;
+	}
+
+    #service-header .service-header-text {
+		margin-top: 30%;
 	}
 
 	#service-header nav ul li a {
@@ -344,23 +480,21 @@ ul.breadcrumb li+li:before {
 		font-size: 40px;
 	}
 
-	#service-header .service-header-text {
-		margin-top: 105%;
-	}
-
 	#service-header .logo h1 {
 		font-size: 35px;
 	}
 
-	#service-header h1 {
+    #service-header .service-header-text h1 {
 		font-size: 50px;
 	}
 
-	#service-header h2 {
-		font-size: 25px;
+	.frontend-service-list img {
+		width: 100%;
+		height: 100%;
+		border-radius: 10px;
 	}
 
-	#service-header p {
-		font-size: 13px;
+	.frontend-service-list p {
+		padding: 20px 0;
 	}
 }

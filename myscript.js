@@ -83,8 +83,8 @@ function handleProgressBar() {
 }
 
 // Tab navigation click hover effects
-var tablinks = document.getElementsByClassName("tab-links");
-var tabcontents = document.getElementsByClassName("tab-contents");
+const tablinks = document.getElementsByClassName("tab-links");
+const tabcontents = document.getElementsByClassName("tab-contents");
 
 function openTab(tabname, event) {
 	for (tablink of tablinks) {

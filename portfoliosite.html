@@ -71,10 +71,16 @@
 
 				<div class="contact-col-2">
 					<form name="submit-to-google-sheet">
-						<input type="text" name="Name" placeholder="Your Name" required>
-						<input type="text" name="Email" placeholder="Your Email" required>
-						<textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
-						<button type="submit" class="btn btn2">Submit</button>
+						<input type="text" name="Name" placeholder="Your Name">
+						<span class="errorMsg" id="nameErrorMsg"></span>
+
+						<input type="text" name="Email" placeholder="Your Email">
+						<span class="errorMsg" id="emailErrorMsg"></span>
+
+						<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+						<span class="errorMsg" id="messageErrorMsg"></span>
+
+						<button type="submit" class="btn btn2" id="submit-button">Submit</button>
 					</form>
 					<span id="msg"></span> <!-- msg alert -->
 				</div><!-- end contact-col-2 -->

@@ -7,8 +7,8 @@ window.addEventListener('beforeunload', function() {
 });
 
 // Scroll Up button functionality module
+const upButton = document.getElementById("arrow-up-button");
 function handleScrollUpButton() {
-  const upButton = document.getElementById("arrow-up-button");
   // Display the "Up" button when scrolling down
   function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -19,15 +19,17 @@ function handleScrollUpButton() {
       upButton.style.display = "none";
     }
   }
-  // When the user clicks on the button, scroll to the top of the document 
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
   // Attach scroll event listener
   window.addEventListener("scroll", scrollFunction);
-  // Attach click event listener
-  upButton.addEventListener("click", topFunction);
+}
+upButton.addEventListener("click", topFunction);
+
+// When the user clicks on the button, scroll to the top of the document 
+function topFunction() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 }
 
 // Sidebar functionality module

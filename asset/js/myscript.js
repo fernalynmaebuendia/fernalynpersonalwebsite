@@ -1,11 +1,3 @@
-// To reload page and back to top of the page
-window.addEventListener('beforeunload', function() {
- 	window.scrollTo({
- 	  top:0,
-		behavior: "smooth"
-  })
-});
-
 // Scroll Up button functionality module
 const upButton = document.getElementById("arrow-up-button");
 function handleScrollUpButton() {
